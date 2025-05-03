@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebVision | Портфолио - Корпоративный сайт</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../index.html" class="logo">WebVision</a>
+                <button class="mobile-menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="nav-links">
+                    <a href="../index.html#services">Услуги</a>
+                    <a href="../index.html#portfolio">Портфолио</a>
+                    <a href="../index.html#prices">Цены</a>
+                    <a href="../index.html#about">О нас</a>
+                    <a href="../index.html#contact">Контакты</a>
+                    <a href="https://wa.me/77081538703" target="_blank" class="consultation-button">Получить консультацию</a>
+                </div>
+            </nav>
+        </div>
+        <div class="menu-overlay"></div>
+    </header>
+
+    <main>
+        <section class="portfolio-detail">
+            <div class="container">
+                <h1>Корпоративный сайт</h1>
+                <div class="project-info">
+                    <div class="project-gallery">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Проект 1">
+                        <div class="gallery-thumbnails">
+                            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Миниатюра 1">
+                            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Миниатюра 2">
+                            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Миниатюра 3">
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h2>О проекте</h2>
+                        <p>Современный корпоративный сайт для компании, специализирующейся на производстве и поставке строительных материалов. Проект включает в себя каталог продукции, систему заказов и интеграцию с CRM.</p>
+                        
+                        <h3>Реализованные функции</h3>
+                        <ul>
+                            <li>Адаптивный дизайн</li>
+                            <li>Каталог продукции с фильтрацией</li>
+                            <li>Система заказов</li>
+                            <li>Интеграция с CRM</li>
+                            <li>Многоязычность</li>
+                            <li>SEO-оптимизация</li>
+                        </ul>
+
+                        <h3>Использованные технологии</h3>
+                        <ul>
+                            <li>HTML5, CSS3, JavaScript</li>
+                            <li>React.js</li>
+                            <li>Node.js</li>
+                            <li>MongoDB</li>
+                            <li>REST API</li>
+                        </ul>
+
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="number">30</span>
+                                <span class="label">дней разработки</span>
+                            </div>
+                            <div class="stat">
+                                <span class="number">1000+</span>
+                                <span class="label">товаров в каталоге</span>
+                            </div>
+                            <div class="stat">
+                                <span class="number">50%</span>
+                                <span class="label">рост продаж</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-buttons">
+                    <a href="https://wa.me/77081538703" target="_blank" class="whatsapp-button">Заказать похожий проект</a>
+                    <a href="../index.html#portfolio" class="back-button">Вернуться к портфолио</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>WebVision</h3>
+                <p>Профессиональная разработка сайтов в Казахстане</p>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p>Телефон: +7 (708) 153-87-03</p>
+                <a href="https://wa.me/77081538703" target="_blank" class="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i> Написать в WhatsApp
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 WebVision. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Модальное окно -->
+    <div id="promoModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-header">
+                <i class="fas fa-medal"></i>
+                <h2>Специальное предложение ко Дню Победы!</h2>
+            </div>
+            <div class="promo-image">
+                <img src="../assets/images/victory-day.svg" alt="День Победы" />
+            </div>
+            <div class="promo-text">
+                <p>В честь <span class="highlight">Дня Победы</span> мы дарим скидку <span class="highlight">25%</span> на разработку вашего сайта по промокоду <span class="highlight">POBEDA</span>!</p>
+                <p>Успейте заказать сайт сейчас и получите преимущество перед конкурентами.</p>
+                <p class="promo-note"><i class="fas fa-info-circle"></i> При заказе обязательно сообщите промокод менеджеру для получения скидки.</p>
+            </div>
+            <ul class="promo-features">
+                <li><i class="fas fa-check-circle"></i> Профессиональная разработка</li>
+                <li><i class="fas fa-check-circle"></i> Современный дизайн</li>
+                <li><i class="fas fa-check-circle"></i> Адаптивная верстка</li>
+                <li><i class="fas fa-check-circle"></i> Быстрая загрузка</li>
+            </ul>
+            <div class="promo-cta">
+                <a href="https://wa.me/77081538703" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-whatsapp"></i> Получить скидку
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
