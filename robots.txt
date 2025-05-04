@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yaradik.github.io/sitemap.xml 
