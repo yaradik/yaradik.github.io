@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /portfolio-examples/ # Не индексировать демо-сайты
+Allow: /
+
+Sitemap: https://yaradik.github.io/sitemap.xml
+# Replace yourdomain.com with your actual domain when deploying

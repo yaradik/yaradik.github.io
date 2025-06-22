@@ -1,0 +1,54 @@
+/* Psychologist Demo Styles - CALM & SUPPORTIVE */
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #3F3F46; /* Dark Gray */
+    background-color: #FFFFFF;
+    line-height: 1.7;
+    margin: 0;
+    font-weight: 300;
+}
+.container { width: 90%; max-width: 850px; margin: 0 auto; padding: 0 15px; }
+h1, h2 { font-family: 'Lora', serif; color: #344E41; /* Dark Green/Teal */ }
+h1 { font-size: 2.3rem; text-align: center; margin-bottom: 0.1em; }
+h2 { font-size: 1.8rem; margin-bottom: 1em; padding-bottom: 0.3em; border-bottom: 1px solid #D1FAE5; /* Light Green */ }
+
+.demo-header.psychologist-header { background-color: #ECFDF5; /* Very Light Green */ padding: 2.5em 0; text-align: center; }
+.psychologist-specialty { font-family: 'Lora', serif; font-style: italic; font-size: 1.1rem; color: #52796F; /* Muted Green */ margin-top:0.2em; }
+
+#approach p { font-size: 1.05rem; }
+
+.psychologist-areas-list {
+    list-style: none;
+    padding-left: 0;
+    columns: 2; /* For wider screens, make it two columns */
+    column-gap: 2em;
+}
+.psychologist-areas-list li {
+    padding: 0.4em 0;
+    position: relative;
+    margin-bottom: 0.3em;
+}
+.psychologist-areas-list li::before {
+    content: "•"; /* Simple bullet */
+    margin-right: 0.7em;
+    color: #52796F; /* Muted Green */
+}
+
+#contact_psychologist { text-align: center; }
+#contact_psychologist a { color: #3B82F6; /* Blue for call to action */ text-decoration: none; font-weight: 600;}
+#contact_psychologist a:hover { text-decoration: underline; }
+#contact_psychologist p { margin-bottom: 0.8em; font-size: 1.05rem;}
+
+.demo-section { padding: 2.5em 0; }
+.demo-placeholder-image {
+    background-color: #F3F4F6; /* Light gray */
+    display: flex; align-items: center; justify-content: center;
+    color: #6B7280; font-size: 1rem; text-align: center;
+    border-radius: 6px; margin: 1.5em auto; padding: 1.5em;
+    border: 1px dashed #D1D5DB; max-width: 600px;
+}
+.demo-footer.psychologist-footer { background-color: #344E41; /* Dark Green/Teal */ color: #E0E7FF; padding: 2em 0; text-align: center; font-size: 0.9em; }
+
+@media (max-width: 600px) {
+    .psychologist-areas-list { columns: 1; }
+}

@@ -1,0 +1,47 @@
+/* Construction Demo Styles - ROBUST & RELIABLE */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.7;
+    margin: 0;
+}
+.container { width: 90%; max-width: 1100px; margin: 0 auto; padding: 0 15px; }
+h1, h2 { font-family: 'Roboto Condensed', sans-serif; color: #D97706; /* Orange/Brown accent */ }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; text-align: center; margin-bottom: 1.5em; }
+
+.demo-header.construction-header { background-color: #F7FAFC; /* Light Gray */ padding: 1em 0; border-bottom: 3px solid #FBBF24; /* Yellow accent */ }
+.construction-header h1 { color: #D97706; margin:0; font-size: 1.5rem; text-align: left; }
+.construction-header .container { display:flex; justify-content: space-between; align-items:center; }
+.demo-nav a { color: #555; text-decoration: none; margin-left: 1em; font-weight: bold; }
+.demo-nav a:hover { color: #D97706; }
+
+.hero-construction { text-align: center; padding: 2em 0; background-color: #FFFBEB; /* Very light yellow */ }
+.hero-construction h2 { font-size: 2.2rem; }
+.hero-construction p { font-size: 1.1rem; color: #555; margin-bottom: 1.5em; }
+
+.btn-construction {
+    display: inline-block;
+    padding: 0.9em 2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 4px;
+    background-color: #F59E0B; /* Amber */
+    color: white;
+    transition: background-color 0.3s ease;
+    margin-top: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.btn-construction:hover { background-color: #D97706; /* Darker Amber */ }
+
+.demo-section { padding: 3em 0; }
+.demo-placeholder-image {
+    background-color: #E2E8F0;
+    display: flex; align-items: center; justify-content: center;
+    color: #718096; font-size: 1rem; text-align: center;
+    border-radius: 4px; margin-top: 1em; padding: 2em;
+    border: 1px dashed #A0AEC0;
+}
+.demo-footer.construction-footer { background-color: #4A5568; /* Dark Gray */ color: #E2E8F0; padding: 2em 0; text-align: center; font-size: 0.9em; }

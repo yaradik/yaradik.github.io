@@ -1,0 +1,138 @@
+/* Accountant Demo Styles - KEEP IT SIMPLE & PROFESSIONAL */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #2D3748; /* Main text from parent */
+    line-height: 1.6;
+    margin: 0;
+}
+.container { /* Basic container from parent, can be overridden if needed */
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+h1, h2 { font-family: 'Lato', sans-serif; color: #2C5282; /* Dark Blue */ }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; text-align: center; margin-bottom: 1.5em; }
+
+.demo-header.accountant-header { background-color: #EBF8FF; /* Light Blue */ padding: 1em 0; border-bottom: 2px solid #C3DAFE; }
+.accountant-header h1 { color: #2C5282; margin:0; font-size: 1.5rem; text-align: left;}
+.accountant-header .container { display:flex; justify-content: space-between; align-items:center; }
+.demo-nav a { color: #2C5282; text-decoration: none; margin-left: 1em; }
+.demo-nav a:hover { text-decoration: underline; }
+
+.hero-accountant { text-align: center; padding-top: 2em; padding-bottom: 2em; background-color: #F7FAFC; }
+.hero-accountant h2 { font-size: 2.2rem; }
+.hero-accountant p { font-size: 1.1rem; color: #4A5568; margin-bottom: 1.5em; }
+
+.btn-accountant {
+    display: inline-block;
+    padding: 0.8em 1.8em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    margin-top: 1em;
+}
+.btn-accountant-primary { background-color: #3182CE; /* Blue */ color: white; border: 1px solid #3182CE;}
+.btn-accountant-primary:hover { background-color: #2B6CB0; /* Darker Blue */}
+
+.demo-section { padding: 3em 0; }
+.demo-placeholder-image {
+    background-color: #E2E8F0; /* Light Gray from parent */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #718096; /* Gray from parent */
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 1em;
+    padding: 2em;
+    border: 1px dashed #A0AEC0;
+}
+
+.demo-footer.accountant-footer { background-color: #2D3748; color: #E2E8F0; padding: 2em 0; text-align: center; font-size: 0.9em;}
+
+/* Minimal styles for placeholders */
+#services .demo-placeholder-image, #about .demo-placeholder-image {
+    /* You would style actual cards/icons here */
+}
+
+/* Grid layouts */
+.services__grid,
+.advantages__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+/* Cards */
+.service-card,
+.advantage-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover,
+.advantage-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Images */
+.hero__image,
+.contact__image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.hero__image img,
+.contact__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-card img,
+.advantage-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Card content */
+.service-card h3,
+.advantage-card h3 {
+    padding: 1rem;
+    margin: 0;
+    font-size: 1.25rem;
+    color: #1F2937;
+}
+
+.service-card p,
+.advantage-card p {
+    padding: 0 1rem 1rem;
+    margin: 0;
+    color: #4B5563;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .services__grid,
+    .advantages__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero__image,
+    .contact__image {
+        height: 300px;
+    }
+}

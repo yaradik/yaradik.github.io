@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Логистическая Фирма "ТрансКарго" - Корпоративный сайт</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family= Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../assets/logo.svg" type="image/svg+xml">
+</head>
+<body>
+    <header class="demo-header logistics-header">
+        <div class="container logistics-header-content">
+            <div class="logistics-logo">ТрансКарго</div>
+            <nav class="demo-nav logistics-nav">
+                <a href="#services_logistics">Услуги</a>
+                <a href="#fleet">Наш флот</a>
+                <a href="#advantages">Преимущества</a>
+                <a href="#request_quote">Расчет ставки</a>
+                <a href="#contact_logistics">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-logistics demo-section">
+        <div class="container">
+            <h1>Надежная доставка ваших грузов по всему миру</h1>
+            <p>Комплексные логистические решения для бизнеса любого масштаба.</p>
+            <div class="hero__image">
+                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80" alt="Логистика и доставка">
+            </div>
+            <a href="#request_quote" class="btn-logistics">Запросить расчет</a>
+        </div>
+    </section>
+
+    <section id="services_logistics" class="demo-section">
+        <div class="container">
+            <h2>Наши Логистические Услуги</h2>
+            <div class="services__grid">
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=600&q=80" alt="Автомобильные перевозки">
+                    <h3>Автомобильные перевозки</h3>
+                    <p>Доставка грузов по России и СНГ</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=600&q=80" alt="Железнодорожные перевозки">
+                    <h3>Железнодорожные перевозки</h3>
+                    <p>Международные перевозки по железной дороге</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=600&q=80" alt="Авиаперевозки">
+                    <h3>Авиаперевозки</h3>
+                    <p>Быстрая доставка по всему миру</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fleet" class="demo-section" style="background-color: #F3F4F6;">
+        <div class="container">
+            <h2>Автопарк и Инфраструктура</h2>
+            <div class="fleet__grid">
+                <div class="fleet-card">
+                    <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=600&q=80" alt="Грузовой транспорт">
+                    <h3>Современный автопарк</h3>
+                    <p>Более 100 единиц техники</p>
+                </div>
+                <div class="fleet-card">
+                    <img src="https://images.unsplash.com/photo-1586528116493-cec7d620b6a5?auto=format&fit=crop&w=600&q=80" alt="Складской комплекс">
+                    <h3>Складские помещения</h3>
+                    <p>50 000 м² складских площадей</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="advantages" class="demo-section">
+        <div class="container">
+            <h2>Почему выбирают "ТрансКарго"?</h2>
+            <p>Опыт, надежность, широкая география, индивидуальный подход, современные технологии отслеживания.</p>
+            <div class="advantages__grid">
+                <div class="advantage-card">
+                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=600&q=80" alt="Опыт">
+                    <h3>15 лет опыта</h3>
+                    <p>Работаем с 2009 года</p>
+                </div>
+                <div class="advantage-card">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80" alt="География">
+                    <h3>Широкая география</h3>
+                    <p>Доставка в 50+ стран</p>
+                </div>
+                <div class="advantage-card">
+                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=600&q=80" alt="Технологии">
+                    <h3>Современные технологии</h3>
+                    <p>Отслеживание грузов онлайн</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="request_quote" class="demo-section" style="background-color: #F3F4F6;">
+        <div class="container">
+            <h2>Расчет стоимости перевозки</h2>
+            <div class="quote-form-container">
+                <form class="quote-form">
+                    <div class="form-group">
+                        <label for="cargo-type">Тип груза</label>
+                        <select id="cargo-type" required>
+                            <option value="">Выберите тип груза</option>
+                            <option value="general">Генеральный груз</option>
+                            <option value="dangerous">Опасный груз</option>
+                            <option value="refrigerated">Рефрижераторный груз</option>
+                            <option value="oversized">Крупногабаритный груз</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="weight">Вес (кг)</label>
+                        <input type="number" id="weight" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="volume">Объем (м³)</label>
+                        <input type="number" id="volume" step="0.1" min="0.1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="from">Откуда</label>
+                        <input type="text" id="from" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="to">Куда</label>
+                        <input type="text" id="to" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="transport-type">Тип перевозки</label>
+                        <select id="transport-type" required>
+                            <option value="">Выберите тип перевозки</option>
+                            <option value="road">Автомобильная</option>
+                            <option value="rail">Железнодорожная</option>
+                            <option value="air">Авиационная</option>
+                            <option value="multimodal">Мультимодальная</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-logistics">Рассчитать стоимость</button>
+                </form>
+                <div class="quote-info">
+                    <h3>Как мы рассчитываем стоимость?</h3>
+                    <ul>
+                        <li>Расстояние и маршрут перевозки</li>
+                        <li>Тип и характеристики груза</li>
+                        <li>Выбранный способ доставки</li>
+                        <li>Срочность доставки</li>
+                        <li>Дополнительные услуги</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact_logistics" class="demo-section">
+        <div class="container">
+            <h2>Свяжитесь с нами</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Центральный офис</h3>
+                        <p><strong>Адрес:</strong> г. Москва, ул. Логистическая, 15</p>
+                        <p><strong>Телефон:</strong> +7 (495) 123-45-67</p>
+                        <p><strong>Email:</strong> info@transcargo.ru</p>
+                        <p><strong>Режим работы:</strong> Пн-Пт: 9:00 - 18:00</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Отдел продаж</h3>
+                        <p><strong>Телефон:</strong> +7 (495) 123-45-68</p>
+                        <p><strong>Email:</strong> sales@transcargo.ru</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Отдел поддержки</h3>
+                        <p><strong>Телефон:</strong> +7 (495) 123-45-69</p>
+                        <p><strong>Email:</strong> support@transcargo.ru</p>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5ce?auto=format&fit=crop&w=1200&q=80" alt="Карта расположения офиса">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="demo-footer logistics-footer">
+        <p>&copy; 2024 Логистическая Фирма "ТрансКарго".</p>
+        <p><a href="../../index.html" style="color:#A5B4FC; text-decoration:underline;">Вернуться на главный сайт YaRadik</a></p>
+    </footer>
+</body>
+</html>

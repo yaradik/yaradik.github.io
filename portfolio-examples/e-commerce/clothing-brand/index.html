@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELEGANCE - Современная одежда</title>
+    <meta name="description" content="Современная одежда для стильных людей. Качественные материалы, актуальные тренды, доступные цены.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../assets/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="store-header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <img src="https://images.unsplash.com/photo-1560343090-f0409e92791a?w=40&h=40&fit=crop" alt="Clothing Brand">
+                    <h1>Clothing Brand</h1>
+                </div>
+                <nav class="store-nav">
+                    <a href="#new">Новинки</a>
+                    <a href="#women">Женщинам</a>
+                    <a href="#men">Мужчинам</a>
+                    <a href="#sale">Распродажа</a>
+                </nav>
+                <div class="header__actions">
+                    <a href="#search" class="action-btn">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#favorites" class="action-btn">
+                        <i class="fas fa-heart"></i>
+                        <span class="badge">0</span>
+                    </a>
+                    <a href="#cart" class="action-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-fashion">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h2>Новая коллекция</h2>
+                    <p>Откройте для себя последние тренды в мире моды. Качественные материалы и стильные решения для вашего гардероба.</p>
+                    <a href="#new" class="btn-fashion">
+                        Смотреть коллекцию
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="hero__image">
+                    <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=1200&h=800&fit=crop" alt="Новая коллекция">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="categories" class="store-section">
+        <div class="container">
+            <div class="categories__grid">
+                <a href="#women" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&h=1000&fit=crop" alt="Женская одежда">
+                    <div class="category-card__content">
+                        <h3>Женщинам</h3>
+                        <span class="category-link">Смотреть коллекцию</span>
+                    </div>
+                </a>
+                <a href="#men" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?w=800&h=1000&fit=crop" alt="Мужская одежда">
+                    <div class="category-card__content">
+                        <h3>Мужчинам</h3>
+                        <span class="category-link">Смотреть коллекцию</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="new" class="store-section" style="background-color: #F8F9FA;">
+        <div class="container">
+            <h2>Новинки сезона</h2>
+            <p class="section-description">Самые актуальные модели этого сезона</p>
+            <div class="products__grid">
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=400&h=600&fit=crop" alt="Платье">
+                        <div class="product-card__actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                        <span class="product-card__badge">New</span>
+                    </div>
+                    <div class="product-card__content">
+                        <h3>Платье "Элегант"</h3>
+                        <div class="product-card__price">
+                            <span class="price">4 999 ₽</span>
+                        </div>
+                        <div class="product-card__colors">
+                            <span class="color-dot" style="background-color: #000000;"></span>
+                            <span class="color-dot" style="background-color: #FF0000;"></span>
+                            <span class="color-dot" style="background-color: #0000FF;"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Добавьте больше карточек товаров -->
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="store-section">
+        <div class="container">
+            <div class="features__grid">
+                <div class="feature-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Бесплатная доставка</h3>
+                    <p>При заказе от 5000₽</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-undo"></i>
+                    <h3>Легкий возврат</h3>
+                    <p>14 дней на возврат</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Гарантия качества</h3>
+                    <p>Проверенные материалы</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Поддержка 24/7</h3>
+                    <p>Всегда на связи</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sale" class="store-section" style="background-color: #F8F9FA;">
+        <div class="container">
+            <div class="sale-banner">
+                <div class="sale-banner__content">
+                    <h2>Распродажа</h2>
+                    <p>Скидки до 70% на коллекцию прошлого сезона</p>
+                    <a href="#sale" class="btn-fashion btn-fashion--outline">
+                        Смотреть товары
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800&h=400&fit=crop" alt="Распродажа">
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="store-section">
+        <div class="container">
+            <div class="newsletter__content">
+                <h2>Подпишитесь на новости</h2>
+                <p>Получайте информацию о новых коллекциях и специальных предложениях</p>
+                <form class="newsletter__form">
+                    <input type="email" placeholder="Ваш email" required>
+                    <button type="submit" class="btn-fashion">
+                        Подписаться
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="store-footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <img src="https://images.unsplash.com/photo-1560343090-f0409e92791a?w=40&h=40&fit=crop" alt="Clothing Brand" class="footer__logo">
+                    <p>Современная одежда для стильных людей</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer__nav">
+                    <h4>Информация</h4>
+                    <a href="#">О компании</a>
+                    <a href="#">Доставка</a>
+                    <a href="#">Оплата</a>
+                    <a href="#">Возврат</a>
+                </div>
+                <div class="footer__nav">
+                    <h4>Каталог</h4>
+                    <a href="#">Женщинам</a>
+                    <a href="#">Мужчинам</a>
+                    <a href="#">Новинки</a>
+                    <a href="#">Распродажа</a>
+                </div>
+                <div class="footer__contact">
+                    <h4>Контакты</h4>
+                    <p><i class="fas fa-phone"></i> +7 (800) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> info@elegance.ru</p>
+                    <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Модная, 1</p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 ELEGANCE. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

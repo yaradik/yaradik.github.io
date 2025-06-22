@@ -1,0 +1,222 @@
+/* Tablet and larger mobile */
+@media (max-width: 992px) {
+    :root {
+        --spacing-unit: 0.9rem;
+    }
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+
+    .header__container {
+        /* Allow space for burger if it appears early */
+    }
+
+    .services__grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .portfolio__grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .portfolio-gallery {
+         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    /* .workflow__steps specific grid styling removed as it's now flexbox */
+    /* Original: grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
+    .workflow-step {
+        flex-basis: 200px; /* Adjust flex-basis for tablets if needed */
+    }
+
+
+    .reviews-preview__grid {
+        grid-template-columns: 1fr; /* Stack on smaller tablets */
+    }
+    .review-full-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .review-full-card__photo {
+        margin-bottom: var(--spacing-unit);
+    }
+
+    .footer__container {
+        grid-template-columns: 1fr; /* Stack footer columns */
+        text-align: center; /* Center text content within each stacked cell */
+    }
+    .footer__contacts, .footer__nav {
+        margin-bottom: calc(var(--spacing-unit) * 1.5);
+    }
+    .footer__logo {
+        margin: 0 auto calc(var(--spacing-unit)) auto;
+    }
+    .footer__nav-title {
+        text-align: center;
+    }
+    .nav__list--footer {
+        align-items: center; /* Center footer nav links when stacked and text-align is center */
+    }
+    .nav__list--footer .nav__link {
+        text-align: center;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    :root {
+        --spacing-unit: 0.8rem;
+    }
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.3rem; }
+
+    .section-padding, .section-padding--light {
+        padding-top: calc(var(--spacing-unit) * 3);
+        padding-bottom: calc(var(--spacing-unit) * 3);
+    }
+
+    .header__nav {
+        display: none; 
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-main);
+        flex-direction: column;
+        align-items: center;
+        padding: var(--spacing-unit) 0;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        z-index: 999; 
+    }
+
+    .header__nav.active {
+        display: flex; 
+    }
+
+    .nav__list { /* This applies to header nav on mobile when active */
+        flex-direction: column;
+        width: 100%;
+    }
+     /* Ensure footer nav list maintains column direction even if .nav__list is changed for header */
+    .nav__list--footer {
+        flex-direction: column !important; /* Keep it column */
+        align-items: center !important; /* Align to center as per parent text-align */
+    }
+
+
+    .nav__item {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav__link { /* Applies to header nav links on mobile */
+        display: block;
+        padding: calc(var(--spacing-unit) * 1.2) var(--spacing-unit);
+        border-bottom: 1px solid var(--bg-secondary);
+    }
+    .nav__item:last-child .nav__link { /* Applies to header nav links on mobile */
+        border-bottom: none;
+    }
+    .nav__list--footer .nav__link { /* Reset border for footer links */
+        border-bottom: none;
+        padding: calc(var(--spacing-unit) * 0.25) 0; /* Keep footer link padding consistent */
+    }
+
+
+    .header__cta {
+        display: none; 
+    }
+
+    .burger {
+        display: block; 
+    }
+    .burger.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .burger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .burger.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .hero {
+        padding: calc(var(--spacing-unit) * 3) 0;
+    }
+    .hero__actions {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-unit);
+    }
+    .hero__actions .btn {
+        width: 100%;
+        max-width: 300px; 
+        margin: 0 auto;
+    }
+    
+    .services__grid,
+    .portfolio__grid,
+    /* .workflow__steps, (Grid styling removed) */
+    .portfolio-gallery {
+        grid-template-columns: 1fr; /* Stack all grids to single column */
+    }
+    .workflow-step {
+        flex-basis: 100%; /* Workflow items take full width on mobile */
+        min-width: unset; /* Reset min-width if it forces side-by-side */
+    }
+
+
+    .workflow-step { /* Was .workflow-step specific padding styling, general now */
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .portfolio-filters {
+        gap: calc(var(--spacing-unit)*0.5);
+    }
+    .btn-filter {
+        font-size: 0.9rem;
+        padding: calc(var(--spacing-unit) * 0.5) var(--spacing-unit) ;
+    }
+    .review-full-card {
+        padding: calc(var(--spacing-unit) * 1.5);
+    }
+    .review-full-card__photo {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Smaller mobile devices */
+@media (max-width: 576px) {
+    :root {
+        --spacing-unit: 0.75rem;
+    }
+    body {
+        font-size: 0.95rem;
+    }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.6rem; }
+    h3 { font-size: 1.2rem; }
+
+    .container {
+        width: 95%;
+    }
+    .btn {
+        padding: calc(var(--spacing-unit) * 0.8) calc(var(--spacing-unit) * 1.2);
+        font-size: 0.95rem;
+    }
+    .btn-large {
+        font-size: 1rem;
+    }
+
+    .service-card {
+        padding: calc(var(--spacing-unit) * 1.5);
+    }
+    .portfolio-card__content {
+         padding: var(--spacing-unit);
+    }
+    .portfolio-item__info {
+        padding: var(--spacing-unit);
+    }
+}
