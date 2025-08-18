@@ -15,7 +15,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -55,218 +55,314 @@
             </div>
         </section>
 
-        <section class="portfolio-categories section-padding">
+        <section class="portfolio-tabs section-padding">
             <div class="container">
-                <div class="portfolio-categories__grid">
+                <div class="tabs">
+                    <a class="tab active" href="#tab-corporate" data-tab="corporate">Корпоративные сайты</a>
+                    <a class="tab" href="#tab-business" data-tab="business">Личный бренд</a>
+                    <a class="tab" href="#tab-ecom" data-tab="ecom">E‑commerce</a>
+                    <a class="tab" href="#tab-landings" data-tab="landings">Лендинги</a>
+                    <a class="tab" href="#tab-apps" data-tab="apps">Мои программы и чат‑боты</a>
+                </div>
+
+                <div class="tab-panels">
+                    <div class="tab-panel active" id="tab-corporate">
+                        <div class="portfolio-categories__grid">
                     <!-- Корпоративные сайты -->
                     <div class="portfolio-category">
                         <h2 class="portfolio-category__title">Корпоративные сайты</h2>
                         <div class="portfolio-category__grid">
                             <div class="portfolio-card">
                                 <div class="portfolio-card__image-wrapper">
-                                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&auto=format&fit=crop&q=60" alt="Превью проекта: Медицинский центр" class="portfolio-card__image" loading="lazy">
+                                    <span class="portfolio-card__badge">Медицина</span>
+                                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&auto=format&fit=crop&q=60" alt="Центр семейной медицины в Алматы — корпоративный сайт" class="portfolio-card__image" loading="lazy">
                                     <div class="portfolio-card__overlay">
-                                        <a href="portfolio-examples/corporate/medical-center/index.html" class="portfolio-card__link" target="_blank">Смотреть демо</a>
+                                        <a href="portfolio-examples/corporate/medical-center/index.html" class="portfolio-card__link" target="_blank">
+                                            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:8px;"><path d="M12 5c-7 0-9 7-9 7s2 7 9 7 9-7 9-7-2-7-9-7zm0 12c-5.05 0-7.29-4.18-7.93-5C4.71 10.18 6.95 6 12 6s7.29 4.18 7.93 5c-.64.82-2.88 5-7.93 5zm0-8a3 3 0 100 6 3 3 0 000-6zm0 5a2 2 0 110-4 2 2 0 010 4z" fill="#fff"/></svg>
+                                            Смотреть кейс
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="portfolio-card__content">
-                                    <h3 class="portfolio-card__title">Медицинский центр</h3>
-                                    <p class="portfolio-card__description">Корпоративный сайт с онлайн-записью и информацией об услугах</p>
+                                    <h3 class="portfolio-card__title">Центр семейной медицины в Алматы</h3>
+                                    <p class="portfolio-card__description">Создан корпоративный сайт с онлайн-записью и адаптацией под мобильные. Задача — увеличить количество первичных приёмов и упростить запись для пациентов.</p>
+                                    <div class="portfolio-card__result">+40% онлайн-заявок за 2 месяца</div>
                                 </div>
                             </div>
 
                             <div class="portfolio-card">
                                 <div class="portfolio-card__image-wrapper">
-                                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&auto=format&fit=crop&q=60" alt="Превью проекта: IT-компания" class="portfolio-card__image" loading="lazy">
+                                    <span class="portfolio-card__badge">IT</span>
+                                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&auto=format&fit=crop&q=60" alt="IT-компания — корпоративный сайт и автоматизация, Алматы" class="portfolio-card__image" loading="lazy">
                                     <div class="portfolio-card__overlay">
-                                        <a href="portfolio-examples/corporate/it-company/index.html" class="portfolio-card__link" target="_blank">Смотреть демо</a>
+                                        <a href="portfolio-examples/corporate/it-company/index.html" class="portfolio-card__link" target="_blank">
+                                            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:8px;"><path d="M12 5c-7 0-9 7-9 7s2 7 9 7 9-7 9-7-2-7-9-7zm0 12c-5.05 0-7.29-4.18-7.93-5C4.71 10.18 6.95 6 12 6s7.29 4.18 7.93 5c-.64.82-2.88 5-7.93 5zm0-8a3 3 0 100 6 3 3 0 000-6zm0 5a2 2 0 110-4 2 2 0 010 4z" fill="#fff"/></svg>
+                                            Смотреть кейс
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="portfolio-card__content">
-                                    <h3 class="portfolio-card__title">IT-компания</h3>
-                                    <p class="portfolio-card__description">Современный корпоративный сайт с портфолио проектов</p>
+                                    <h3 class="portfolio-card__title">IT-компания, Алматы</h3>
+                                    <p class="portfolio-card__description">Современный корпоративный сайт с портфолио проектов и автоматизацией заявок. Решение — повысить доверие и увеличить обращения через сайт.</p>
+                                    <div class="portfolio-card__result">Рост обращений в 2 раза</div>
                                 </div>
                             </div>
 
                             <div class="portfolio-card">
                                 <div class="portfolio-card__image-wrapper">
-                                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&auto=format&fit=crop&q=60" alt="Превью проекта: Строительная компания" class="portfolio-card__image" loading="lazy">
+                                    <span class="portfolio-card__badge">Строительство</span>
+                                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&auto=format&fit=crop&q=60" alt="Строительная компания — корпоративный сайт, Казахстан" class="portfolio-card__image" loading="lazy">
                                     <div class="portfolio-card__overlay">
-                                        <a href="portfolio-examples/corporate/construction/index.html" class="portfolio-card__link" target="_blank">Смотреть демо</a>
+                                        <a href="portfolio-examples/corporate/construction/index.html" class="portfolio-card__link" target="_blank">
+                                            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:8px;"><path d="M12 5c-7 0-9 7-9 7s2 7 9 7 9-7 9-7-2-7-9-7zm0 12c-5.05 0-7.29-4.18-7.93-5C4.71 10.18 6.95 6 12 6s7.29 4.18 7.93 5c-.64.82-2.88 5-7.93 5zm0-8a3 3 0 100 6 3 3 0 000-6zm0 5a2 2 0 110-4 2 2 0 010 4z" fill="#fff"/></svg>
+                                            Смотреть кейс
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="portfolio-card__content">
-                                    <h3 class="portfolio-card__title">Строительная компания</h3>
-                                    <p class="portfolio-card__description">Корпоративный сайт с каталогом проектов и калькулятором</p>
+                                    <h3 class="portfolio-card__title">Строительная компания, Казахстан</h3>
+                                    <p class="portfolio-card__description">Корпоративный сайт с каталогом реализованных объектов и калькулятором стоимости. Задача — повысить доверие и увеличить количество заявок на просчёт.</p>
+                                    <div class="portfolio-card__result">+35% заявок за 1 месяц</div>
                                 </div>
                             </div>
 
                             <div class="portfolio-card">
                                 <div class="portfolio-card__image-wrapper">
-                                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&auto=format&fit=crop&q=60" alt="Превью проекта: Ресторан" class="portfolio-card__image" loading="lazy">
+                                    <span class="portfolio-card__badge">Ресторан</span>
+                                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&auto=format&fit=crop&q=60" alt="Ресторан — сайт с меню и бронированием, Алматы" class="portfolio-card__image" loading="lazy">
                                     <div class="portfolio-card__overlay">
-                                        <a href="portfolio-examples/corporate/restaurant/index.html" class="portfolio-card__link" target="_blank">Смотреть демо</a>
+                                        <a href="portfolio-examples/corporate/restaurant/index.html" class="portfolio-card__link" target="_blank">
+                                            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:8px;"><path d="M12 5c-7 0-9 7-9 7s2 7 9 7 9-7 9-7-2-7-9-7zm0 12c-5.05 0-7.29-4.18-7.93-5C4.71 10.18 6.95 6 12 6s7.29 4.18 7.93 5c-.64.82-2.88 5-7.93 5zm0-8a3 3 0 100 6 3 3 0 000-6zm0 5a2 2 0 110-4 2 2 0 010 4z" fill="#fff"/></svg>
+                                            Смотреть кейс
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="portfolio-card__content">
-                                    <h3 class="portfolio-card__title">Ресторан</h3>
-                                    <p class="portfolio-card__description">Сайт с меню, онлайн-бронированием и галереей</p>
+                                    <h3 class="portfolio-card__title">Ресторан, Алматы</h3>
+                                    <p class="portfolio-card__description">Сайт с меню, онлайн-бронированием и фотогалереей. Решение — увеличить поток гостей и упростить бронирование столиков.</p>
+                                    <div class="portfolio-card__result">+50% бронирований через сайт</div>
                                 </div>
                             </div>
 
                             <div class="portfolio-card">
                                 <div class="portfolio-card__image-wrapper">
-                                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&auto=format&fit=crop&q=60" alt="Превью проекта: Туристическое агентство" class="portfolio-card__image" loading="lazy">
+                                    <span class="portfolio-card__badge">Фитнес</span>
+                                    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1200&auto=format&fit=crop&q=60" alt="Фитнес-центр — корпоративный сайт с программами и тарифами" class="portfolio-card__image" loading="lazy">
                                     <div class="portfolio-card__overlay">
-                                        <a href="portfolio-examples/corporate/travel/index.html" class="portfolio-card__link" target="_blank">Смотреть демо</a>
+                                        <a href="portfolio-examples/corporate/fitness/index.html" class="portfolio-card__link" target="_blank">
+                                            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:8px;"><path d="M12 5c-7 0-9 7-9 7s2 7 9 7 9-7 9-7-2-7-9-7zm0 12c-5.05 0-7.29-4.18-7.93-5C4.71 10.18 6.95 6 12 6s7.29 4.18 7.93 5c-.64.82-2.88 5-7.93 5zm0-8a3 3 0 100 6 3 3 0 000-6zm0 5a2 2 0 110-4 2 2 0 010 4z" fill="#fff"/></svg>
+                                            Смотреть кейс
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="portfolio-card__content">
-                                    <h3 class="portfolio-card__title">Туристическое агентство</h3>
-                                    <p class="portfolio-card__description">Сайт с каталогом туров и онлайн-бронированием</p>
+                                    <h3 class="portfolio-card__title">Фитнес-центр, Казахстан</h3>
+                                    <p class="portfolio-card__description">Корпоративный сайт с программами, тренерами, расписанием и современными тарифами. Цель — увеличить записи и упростить выбор программы.</p>
+                                    <div class="portfolio-card__result">+35% записей на тренировки</div>
                                 </div>
                             </div>
 
                             <div class="portfolio-card">
                                 <div class="portfolio-card__image-wrapper">
-                                    <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1200&auto=format&fit=crop&q=60" alt="Превью проекта: Логистическая компания" class="portfolio-card__image" loading="lazy">
+                                    <span class="portfolio-card__badge">Туризм</span>
+                                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&auto=format&fit=crop&q=60" alt="Туристическое агентство — сайт с каталогом туров, Казахстан" class="portfolio-card__image" loading="lazy">
                                     <div class="portfolio-card__overlay">
-                                        <a href="portfolio-examples/corporate/logistics-firm/index.html" class="portfolio-card__link" target="_blank">Смотреть демо</a>
+                                        <a href="portfolio-examples/corporate/travel/index.html" class="portfolio-card__link" target="_blank">
+                                            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:8px;"><path d="M12 5c-7 0-9 7-9 7s2 7 9 7 9-7 9-7-2-7-9-7zm0 12c-5.05 0-7.29-4.18-7.93-5C4.71 10.18 6.95 6 12 6s7.29 4.18 7.93 5c-.64.82-2.88 5-7.93 5zm0-8a3 3 0 100 6 3 3 0 000-6zm0 5a2 2 0 110-4 2 2 0 010 4z" fill="#fff"/></svg>
+                                            Смотреть кейс
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="portfolio-card__content">
-                                    <h3 class="portfolio-card__title">Логистическая компания</h3>
-                                    <p class="portfolio-card__description">Корпоративный сайт с калькулятором доставки и отслеживанием грузов</p>
+                                    <h3 class="portfolio-card__title">Туристическое агентство, Казахстан</h3>
+                                    <p class="portfolio-card__description">Сайт с каталогом туров и онлайн-бронированием. Решение — увеличить количество заявок и автоматизировать подбор туров для клиентов.</p>
+                                    <div class="portfolio-card__result">+60% заявок через сайт</div>
                                 </div>
                             </div>
 
                             <div class="portfolio-card">
                                 <div class="portfolio-card__image-wrapper">
-                                    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&auto=format&fit=crop&q=60" alt="Превью проекта: Добывающая компания" class="portfolio-card__image" loading="lazy">
+                                    <span class="portfolio-card__badge">Логистика</span>
+                                    <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1200&auto=format&fit=crop&q=60" alt="Логистическая компания — сайт с калькулятором доставки, Казахстан" class="portfolio-card__image" loading="lazy">
                                     <div class="portfolio-card__overlay">
-                                        <a href="portfolio-examples/corporate/resource-company/index.html" class="portfolio-card__link" target="_blank">Смотреть демо</a>
+                                        <a href="portfolio-examples/corporate/logistics-firm/index.html" class="portfolio-card__link" target="_blank">
+                                            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:8px;"><path d="M12 5c-7 0-9 7-9 7s2 7 9 7 9-7 9-7-2-7-9-7zm0 12c-5.05 0-7.29-4.18-7.93-5C4.71 10.18 6.95 6 12 6s7.29 4.18 7.93 5c-.64.82-2.88 5-7.93 5zm0-8a3 3 0 100 6 3 3 0 000-6zm0 5a2 2 0 110-4 2 2 0 010 4z" fill="#fff"/></svg>
+                                            Смотреть кейс
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="portfolio-card__content">
-                                    <h3 class="portfolio-card__title">Добывающая компания</h3>
-                                    <p class="portfolio-card__description">Сайт с информацией о проектах и экологической политике</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Сайты-визитки -->
-                    <div class="portfolio-category">
-                        <h2 class="portfolio-category__title">Сайты-визитки</h2>
-                        <div class="portfolio-category__grid">
-                            <div class="portfolio-card">
-                                <div class="portfolio-card__image-wrapper">
-                                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&auto=format&fit=crop&q=60" alt="Превью проекта: Сайт-визитка для юриста" class="portfolio-card__image" loading="lazy">
-                                    <div class="portfolio-card__overlay">
-                                        <a href="portfolio-examples/business-card/lawyer/index.html" class="portfolio-card__link" target="_blank">Смотреть демо</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio-card__content">
-                                    <h3 class="portfolio-card__title">Сайт-визитка для юриста</h3>
-                                    <p class="portfolio-card__description">Корпоративный стиль, удобная навигация, форма обратной связи</p>
+                                    <h3 class="portfolio-card__title">Логистическая компания, Казахстан</h3>
+                                    <p class="portfolio-card__description">Корпоративный сайт с калькулятором доставки и отслеживанием грузов. Решение — ускорить обработку заявок и повысить лояльность клиентов.</p>
+                                    <div class="portfolio-card__result">+45% обращений через сайт</div>
                                 </div>
                             </div>
 
                             <div class="portfolio-card">
                                 <div class="portfolio-card__image-wrapper">
-                                    <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=1200&auto=format&fit=crop&q=60" alt="Превью проекта: Сайт-визитка для фотографа" class="portfolio-card__image" loading="lazy">
+                                    <span class="portfolio-card__badge">Добыча</span>
+                                    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&auto=format&fit=crop&q=60" alt="Добывающая компания — сайт о проектах и экологии, Казахстан" class="portfolio-card__image" loading="lazy">
                                     <div class="portfolio-card__overlay">
-                                        <a href="portfolio-examples/business-card/photographer/index.html" class="portfolio-card__link" target="_blank">Смотреть демо</a>
+                                        <a href="portfolio-examples/corporate/resource-company/index.html" class="portfolio-card__link" target="_blank">
+                                            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:8px;"><path d="M12 5c-7 0-9 7-9 7s2 7 9 7 9-7 9-7-2-7-9-7zm0 12c-5.05 0-7.29-4.18-7.93-5C4.71 10.18 6.95 6 12 6s7.29 4.18 7.93 5c-.64.82-2.88 5-7.93 5zm0-8a3 3 0 100 6 3 3 0 000-6zm0 5a2 2 0 110-4 2 2 0 010 4z" fill="#fff"/></svg>
+                                            Смотреть кейс
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="portfolio-card__content">
-                                    <h3 class="portfolio-card__title">Сайт-визитка для фотографа</h3>
-                                    <p class="portfolio-card__description">Портфолио работ, галерея, форма заказа фотосессии</p>
-                                </div>
-                            </div>
-
-                            <div class="portfolio-card">
-                                <div class="portfolio-card__image-wrapper">
-                                    <img src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=1200&auto=format&fit=crop&q=60" alt="Превью проекта: Сайт-визитка для психолога" class="portfolio-card__image" loading="lazy">
-                                    <div class="portfolio-card__overlay">
-                                        <a href="portfolio-examples/business-card/psychologist/index.html" class="portfolio-card__link" target="_blank">Смотреть демо</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio-card__content">
-                                    <h3 class="portfolio-card__title">Сайт-визитка для психолога</h3>
-                                    <p class="portfolio-card__description">Личный сайт с информацией об услугах и онлайн-записью</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Интернет-магазины -->
-                    <div class="portfolio-category">
-                        <h2 class="portfolio-category__title">Интернет-магазины</h2>
-                        <div class="portfolio-category__grid">
-                            <div class="portfolio-card">
-                                <div class="portfolio-card__image-wrapper">
-                                    <img src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=1200&auto=format&fit=crop&q=60" alt="Превью проекта: Интернет-магазин игрушек" class="portfolio-card__image" loading="lazy">
-                                    <div class="portfolio-card__overlay">
-                                        <a href="portfolio-examples/e-commerce/toy-store/index.html" class="portfolio-card__link" target="_blank">Смотреть демо</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio-card__content">
-                                    <h3 class="portfolio-card__title">Интернет-магазин игрушек</h3>
-                                    <p class="portfolio-card__description">Полноценный интернет-магазин с каталогом и корзиной</p>
-                                </div>
-                            </div>
-
-                            <div class="portfolio-card">
-                                <div class="portfolio-card__image-wrapper">
-                                    <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=1200&auto=format&fit=crop&q=60" alt="Превью проекта: Интернет-магазин одежды" class="portfolio-card__image" loading="lazy">
-                                    <div class="portfolio-card__overlay">
-                                        <a href="portfolio-examples/e-commerce/clothing-brand/index.html" class="portfolio-card__link" target="_blank">Смотреть демо</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio-card__content">
-                                    <h3 class="portfolio-card__title">Интернет-магазин одежды</h3>
-                                    <p class="portfolio-card__description">Магазин с каталогом, фильтрами и системой размеров</p>
-                                </div>
-                            </div>
-
-                            <div class="portfolio-card">
-                                <div class="portfolio-card__image-wrapper">
-                                    <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=1200&auto=format&fit=crop&q=60" alt="Превью проекта: Магазин handmade товаров" class="portfolio-card__image" loading="lazy">
-                                    <div class="portfolio-card__overlay">
-                                        <a href="portfolio-examples/e-commerce/handmade-goods/index.html" class="portfolio-card__link" target="_blank">Смотреть демо</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio-card__content">
-                                    <h3 class="portfolio-card__title">Магазин handmade товаров</h3>
-                                    <p class="portfolio-card__description">Магазин с каталогом и системой заказов</p>
+                                    <h3 class="portfolio-card__title">Добывающая компания, Казахстан</h3>
+                                    <p class="portfolio-card__description">Сайт с информацией о проектах и экологической политике. Решение — повысить прозрачность и привлечь новых партнеров.</p>
+                                    <div class="portfolio-card__result">Рост посещаемости в 3 раза</div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Лендинги -->
-                    <div class="portfolio-category">
-                        <h2 class="portfolio-category__title">Лендинги</h2>
+                    <div class="tab-panel" id="tab-business">
                         <div class="portfolio-category__grid">
                             <div class="portfolio-card">
                                 <div class="portfolio-card__image-wrapper">
-                                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200&auto=format&fit=crop&q=60" alt="Превью проекта: Landing Page для салона красоты" class="portfolio-card__image" loading="lazy">
+                                    <span class="portfolio-card__badge">Личный бренд</span>
+                                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&auto=format&fit=crop&q=60" alt="Сайт-визитка для юриста, Астана" class="portfolio-card__image" loading="lazy">
                                     <div class="portfolio-card__overlay">
-                                        <a href="portfolio-examples/landing-page/beauty-salon/index.html" class="portfolio-card__link" target="_blank">Смотреть демо</a>
+                                        <a href="portfolio-examples/business-card/lawyer/index.html" class="portfolio-card__link" target="_blank">
+                                            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:8px;"><path d="M12 5c-7 0-9 7-9 7s2 7 9 7 9-7 9-7-2-7-9-7zm0 12c-5.05 0-7.29-4.18-7.93-5C4.71 10.18 6.95 6 12 6s7.29 4.18 7.93 5c-.64.82-2.88 5-7.93 5zm0-8a3 3 0 100 6 3 3 0 000-6zm0 5a2 2 0 110-4 2 2 0 010 4z" fill="#fff"/></svg>
+                                            Смотреть кейс
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="portfolio-card__content">
-                                    <h3 class="portfolio-card__title">Landing Page для салона красоты</h3>
-                                    <p class="portfolio-card__description">Современный дизайн, адаптивная верстка, интеграция с CRM</p>
+                                    <h3 class="portfolio-card__title">Сайт-визитка для юриста, Астана</h3>
+                                    <p class="portfolio-card__description">Личный сайт для юридической фирмы. Внедрена форма обратной связи и корпоративный стиль. Решение — повысить доверие и увеличить поток клиентов.</p>
+                                    <div class="portfolio-card__result">+30% заявок через сайт</div>
                                 </div>
                             </div>
 
                             <div class="portfolio-card">
                                 <div class="portfolio-card__image-wrapper">
-                                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&auto=format&fit=crop&q=60" alt="Превью проекта: Landing Page для бухгалтера" class="portfolio-card__image" loading="lazy">
+                                    <span class="portfolio-card__badge">Личный бренд</span>
+                                    <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=1200&auto=format&fit=crop&q=60" alt="Портфолио-фотограф, Алматы" class="portfolio-card__image" loading="lazy">
                                     <div class="portfolio-card__overlay">
-                                        <a href="portfolio-examples/landing-page/accountant/index.html" class="portfolio-card__link" target="_blank">Смотреть демо</a>
+                                        <a href="portfolio-examples/business-card/photographer/index.html" class="portfolio-card__link" target="_blank">
+                                            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:8px;"><path d="M12 5c-7 0-9 7-9 7s2 7 9 7 9-7 9-7-2-7-9-7zm0 12c-5.05 0-7.29-4.18-7.93-5C4.71 10.18 6.95 6 12 6s7.29 4.18 7.93 5c-.64.82-2.88 5-7.93 5zm0-8a3 3 0 100 6 3 3 0 000-6zm0 5a2 2 0 110-4 2 2 0 010 4z" fill="#fff"/></svg>
+                                            Смотреть кейс
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="portfolio-card__content">
+                                    <h3 class="portfolio-card__title">Портфолио-фотограф, Алматы</h3>
+                                    <p class="portfolio-card__description">Портфолио для фотографа с галереей и онлайн-заказом. Решение — упростить коммуникацию и увеличить поток новых клиентов.</p>
+                                    <div class="portfolio-card__result">+25% новых клиентов</div>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-card">
+                                <div class="portfolio-card__image-wrapper">
+                                    <span class="portfolio-card__badge">Личный бренд</span>
+                                    <img src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=1200&auto=format&fit=crop&q=60" alt="Сайт-визитка для психолога, Казахстан" class="portfolio-card__image" loading="lazy">
+                                    <div class="portfolio-card__overlay">
+                                        <a href="portfolio-examples/business-card/psychologist/index.html" class="portfolio-card__link" target="_blank">
+                                            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:8px;"><path d="M12 5c-7 0-9 7-9 7s2 7 9 7 9-7 9-7-2-7-9-7zm0 12c-5.05 0-7.29-4.18-7.93-5C4.71 10.18 6.95 6 12 6s7.29 4.18 7.93 5c-.64.82-2.88 5-7.93 5zm0-8a3 3 0 100 6 3 3 0 000-6zm0 5a2 2 0 110-4 2 2 0 010 4z" fill="#fff"/></svg>
+                                            Смотреть кейс
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="portfolio-card__content">
+                                    <h3 class="portfolio-card__title">Сайт-визитка для психолога, Казахстан</h3>
+                                    <p class="portfolio-card__description">Личный сайт с информацией об услугах и онлайн-записью. Решение — повысить доверие и упростить запись для клиентов.</p>
+                                    <div class="portfolio-card__result">+20% новых клиентов</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="tab-ecom">
+                        <div class="portfolio-category__grid">
+                            <div class="portfolio-card">
+                                <div class="portfolio-card__image-wrapper">
+                                    <span class="portfolio-card__badge">E-commerce</span>
+                                    <img src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=1200&auto=format&fit=crop&q=60" alt="Интернет-магазин игрушек, Казахстан" class="portfolio-card__image" loading="lazy">
+                                    <div class="portfolio-card__overlay">
+                                        <a href="portfolio-examples/e-commerce/toy-store/index.html" class="portfolio-card__link" target="_blank">
+                                            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:8px;"><path d="M12 5c-7 0-9 7-9 7s2 7 9 7 9-7 9-7-2-7-9-7zm0 12c-5.05 0-7.29-4.18-7.93-5C4.71 10.18 6.95 6 12 6s7.29 4.18 7.93 5c-.64.82-2.88 5-7.93 5zm0-8a3 3 0 100 6 3 3 0 000-6zm0 5a2 2 0 110-4 2 2 0 010 4z" fill="#fff"/></svg>
+                                            Смотреть кейс
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="portfolio-card__content">
+                                    <h3 class="portfolio-card__title">Интернет-магазин игрушек, Казахстан</h3>
+                                    <p class="portfolio-card__description">Полноценный интернет-магазин с каталогом и корзиной. Задача — увеличить продажи и сделать покупку максимально удобной для родителей.</p>
+                                    <div class="portfolio-card__result">Продажи выросли в 2 раза за 3 месяца</div>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-card">
+                                <div class="portfolio-card__image-wrapper">
+                                    <span class="portfolio-card__badge">E-commerce</span>
+                                    <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=1200&auto=format&fit=crop&q=60" alt="Интернет-магазин одежды, Казахстан" class="portfolio-card__image" loading="lazy">
+                                    <div class="portfolio-card__overlay">
+                                        <a href="portfolio-examples/e-commerce/clothing-brand/index.html" class="portfolio-card__link" target="_blank">
+                                            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:8px;"><path d="M12 5c-7 0-9 7-9 7s2 7 9 7 9-7 9-7-2-7-9-7zm0 12c-5.05 0-7.29-4.18-7.93-5C4.71 10.18 6.95 6 12 6s7.29 4.18 7.93 5c-.64.82-2.88 5-7.93 5zm0-8a3 3 0 100 6 3 3 0 000-6zm0 5a2 2 0 110-4 2 2 0 010 4z" fill="#fff"/></svg>
+                                            Смотреть кейс
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="portfolio-card__content">
+                                    <h3 class="portfolio-card__title">Интернет-магазин одежды, Казахстан</h3>
+                                    <p class="portfolio-card__description">Магазин с каталогом, фильтрами и системой размеров. Решение — упростить выбор и увеличить средний чек.</p>
+                                    <div class="portfolio-card__result">+30% заказов через сайт</div>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-card">
+                                <div class="portfolio-card__image-wrapper">
+                                    <span class="portfolio-card__badge">E-commerce</span>
+                                    <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=1200&auto=format&fit=crop&q=60" alt="Магазин handmade товаров, Казахстан" class="portfolio-card__image" loading="lazy">
+                                    <div class="portfolio-card__overlay">
+                                        <a href="portfolio-examples/e-commerce/handmade-goods/index.html" class="portfolio-card__link" target="_blank">
+                                            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:8px;"><path d="M12 5c-7 0-9 7-9 7s2 7 9 7 9-7 9-7-2-7-9-7zm0 12c-5.05 0-7.29-4.18-7.93-5C4.71 10.18 6.95 6 12 6s7.29 4.18 7.93 5c-.64.82-2.88 5-7.93 5zm0-8a3 3 0 100 6 3 3 0 000-6zm0 5a2 2 0 110-4 2 2 0 010 4z" fill="#fff"/></svg>
+                                            Смотреть кейс
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="portfolio-card__content">
+                                    <h3 class="portfolio-card__title">Магазин handmade товаров, Казахстан</h3>
+                                    <p class="portfolio-card__description">Магазин с каталогом и системой заказов. Решение — расширить географию продаж и автоматизировать обработку заказов.</p>
+                                    <div class="portfolio-card__result">+50% новых клиентов</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="tab-landings">
+                        <div class="portfolio-category__grid">
+                            <div class="portfolio-card">
+                                <div class="portfolio-card__image-wrapper">
+                                    <span class="portfolio-card__badge">Красота</span>
+                                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200&auto=format&fit=crop&q=60" alt="Лендинг для салона красоты, Шымкент" class="portfolio-card__image" loading="lazy">
+                                    <div class="portfolio-card__overlay">
+                                        <a href="portfolio-examples/landing-page/beauty-salon/index.html" class="portfolio-card__link" target="_blank">
+                                            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:8px;"><path d="M12 5c-7 0-9 7-9 7s2 7 9 7 9-7 9-7-2-7-9-7zm0 12c-5.05 0-7.29-4.18-7.93-5C4.71 10.18 6.95 6 12 6s7.29 4.18 7.93 5c-.64.82-2.88 5-7.93 5zm0-8a3 3 0 100 6 3 3 0 000-6zm0 5a2 2 0 110-4 2 2 0 010 4z" fill="#fff"/></svg>
+                                            Смотреть кейс
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="portfolio-card__content">
+                                    <h3 class="portfolio-card__title">Лендинг для салона красоты, Шымкент</h3>
+                                    <p class="portfolio-card__description">Лендинг с интеграцией CRM и онлайн-записью. Решение — увеличить поток клиентов и автоматизировать работу администраторов.</p>
+                                    <div class="portfolio-card__result">+40% записей через сайт</div>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-card">
+                                <div class="portfolio-card__image-wrapper">
+                                    <span class="portfolio-card__badge">Финансы</span>
+                                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&auto=format&fit=crop&q=60" alt="Лендинг для бухгалтера, Казахстан" class="portfolio-card__image" loading="lazy">
+                                    <div class="portfolio-card__overlay">
+                                        <a href="portfolio-examples/landing-page/accountant/index.html" class="portfolio-card__link" target="_blank">
+                                            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:8px;"><path d="M12 5c-7 0-9 7-9 7s2 7 9 7 9-7 9-7-2-7-9-7zm0 12c-5.05 0-7.29-4.18-7.93-5C4.71 10.18 6.95 6 12 6s7.29 4.18 7.93 5c-.64.82-2.88 5-7.93 5zm0-8a3 3 0 100 6 3 3 0 000-6zm0 5a2 2 0 110-4 2 2 0 010 4z" fill="#fff"/></svg>
+                                            Смотреть кейс
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="portfolio-card__content">
@@ -285,6 +381,46 @@
                                 <div class="portfolio-card__content">
                                     <h3 class="portfolio-card__title">Landing Page для строительной компании</h3>
                                     <p class="portfolio-card__description">Лендинг с калькулятором стоимости и портфолио работ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="tab-apps">
+                        <div class="portfolio-categories__grid">
+                            <div class="portfolio-card">
+                                <div class="portfolio-card__image-wrapper">
+                                    <span class="portfolio-card__badge">Чат‑бот</span>
+                                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&auto=format&fit=crop&q=60" alt="Телеграм‑бот для поддержки" class="portfolio-card__image" loading="lazy">
+                                    <div class="portfolio-card__overlay">
+                                        <a href="#" class="portfolio-card__link" target="_blank">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 5c-7 0-9 7-9 7s2 7 9 7 9-7 9-7-2-7-9-7zm0 12c-5.05 0-7.29-4.18-7.93-5C4.71 10.18 6.95 6 12 6s7.29 4.18 7.93 5c-.64.82-2.88 5-7.93 5zm0-8a3 3 0 100 6 3 3 0 000-6zm0 5a2 2 0 110-4 2 2 0 010 4z" fill="#fff"/></svg>
+                                            Смотреть кейс
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="portfolio-card__content">
+                                    <h3 class="portfolio-card__title">Телеграм‑бот поддержки</h3>
+                                    <p class="portfolio-card__description">Автоматизация поддержки пользователей и сбор заявок. Интеграция с CRM.</p>
+                                    <div class="portfolio-card__result">Сокращение нагрузки на операторов на 60%</div>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-card">
+                                <div class="portfolio-card__image-wrapper">
+                                    <span class="portfolio-card__badge">Сервис</span>
+                                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200&auto=format&fit=crop&q=60" alt="Веб‑сервис" class="portfolio-card__image" loading="lazy">
+                                    <div class="portfolio-card__overlay">
+                                        <a href="#" class="portfolio-card__link" target="_blank">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 5c-7 0-9 7-9 7s2 7 9 7 9-7 9-7-2-7-9-7zm0 12c-5.05 0-7.29-4.18-7.93-5C4.71 10.18 6.95 6 12 6s7.29 4.18 7.93 5c-.64.82-2.88 5-7.93 5zm0-8a3 3 0 100 6 3 3 0 000-6zm0 5a2 2 0 110-4 2 2 0 010 4z" fill="#fff"/></svg>
+                                            Смотреть кейс
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="portfolio-card__content">
+                                    <h3 class="portfolio-card__title">Веб‑сервис для заявок</h3>
+                                    <p class="portfolio-card__description">Внутренняя панель для обработки лидов и аналитики.</p>
+                                    <div class="portfolio-card__result">Время обработки −40%</div>
                                 </div>
                             </div>
                         </div>
@@ -329,5 +465,44 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var tabsContainer = document.querySelector('.tabs');
+        var panels = document.querySelectorAll('.tab-panels .tab-panel');
+        if (!tabsContainer || !panels.length) return;
+
+        function setTab(name) {
+            tabsContainer.querySelectorAll('.tab').forEach(function (btn) {
+                var active = btn.getAttribute('data-tab') === name;
+                btn.classList.toggle('active', active);
+            });
+            panels.forEach(function (p) {
+                var match = p.id === ('tab-' + name);
+                if (match) {
+                    p.removeAttribute('hidden');
+                    p.classList.add('active');
+                } else {
+                    p.setAttribute('hidden', '');
+                    p.classList.remove('active');
+                }
+            });
+        }
+
+        tabsContainer.addEventListener('click', function (e) {
+            var a = e.target.closest('.tab');
+            if (!a) return;
+            e.preventDefault();
+            var target = a.getAttribute('data-tab');
+            if (!target) return;
+            setTab(target);
+            history.replaceState(null, '', '#tab-' + target);
+        });
+
+        var initial = (location.hash && location.hash.indexOf('#tab-') === 0)
+            ? location.hash.replace('#tab-', '')
+            : (tabsContainer.querySelector('.tab.active') ? tabsContainer.querySelector('.tab.active').getAttribute('data-tab') : 'corporate');
+        setTab(initial);
+    });
+    </script>
 </body>
 </html>

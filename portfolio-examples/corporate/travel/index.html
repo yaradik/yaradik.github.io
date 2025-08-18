@@ -3,164 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TravelPro - Туристическое агентство</title>
-    <meta name="description" content="Профессиональное туристическое агентство, предлагающее туры по всему миру, экскурсии и индивидуальные путешествия.">
+    <title>TravelPro — Креативное туристическое агентство</title>
+    <meta name="description" content="Яркие путешествия, индивидуальные туры, креативный подход. TravelPro — ваш гид по миру!">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="../../assets/logo.svg" type="image/svg+xml">
 </head>
 <body>
-    <header class="demo-header travel-header">
-        <div class="container">
-            <h1>TravelPro</h1>
-            <nav class="demo-nav">
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <span>🌍</span>
+                <span>TravelPro</span>
+            </div>
+            <nav class="nav">
                 <a href="#tours">Туры</a>
-                <a href="#destinations">Направления</a>
-                <a href="#services">Услуги</a>
-                <a href="#contact">Контакты</a>
+                <a href="#advantages">Преимущества</a>
+                <a href="#contact">Заявка</a>
             </nav>
         </div>
     </header>
 
-    <section class="hero-travel demo-section">
-        <div class="container">
-            <h2>Откройте для себя мир с TravelPro</h2>
-            <p>Организуем незабываемые путешествия по всему миру. Индивидуальные туры, групповые поездки и экскурсии с профессиональными гидами.</p>
-            <div class="hero__image">
-                <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&auto=format&fit=crop&q=80" alt="Туристическое агентство">
-            </div>
-            <a href="#tours" class="btn-travel">Выбрать тур</a>
+    <section class="hero hero--creative">
+        <div class="hero__bg-svg">
+            <svg width="100%" height="100%" viewBox="0 0 1440 480" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero__svg-bg">
+                <circle cx="900" cy="220" r="320" fill="url(#sun-gradient)" opacity="0.32"/>
+                <defs>
+                    <radialGradient id="sun-gradient" cx="0.5" cy="0.5" r="0.5" fx="0.5" fy="0.5">
+                        <stop offset="0%" stop-color="#fffbe7"/>
+                        <stop offset="100%" stop-color="#fbc2eb"/>
+                    </radialGradient>
+                </defs>
+                <ellipse cx="350" cy="120" rx="90" ry="32" fill="#fff" opacity="0.18"/>
+                <ellipse cx="1200" cy="80" rx="60" ry="22" fill="#fff" opacity="0.13"/>
+                <path d="M200 320 Q400 260 600 320 T1000 320" stroke="#ff5e62" stroke-width="3" fill="none" opacity="0.10"/>
+                <path d="M900 180 Q1100 120 1300 180" stroke="#00bfae" stroke-width="2" fill="none" opacity="0.08"/>
+                <g>
+                    <circle cx="400" cy="260" r="8" fill="#ff5e62"/>
+                    <rect x="395" y="250" width="18" height="6" rx="3" fill="#fff" opacity="0.7"/>
+                </g>
+                <g>
+                    <path d="M700 100 Q750 80 800 100 T900 100" stroke="#ff5e62" stroke-width="2" fill="none" opacity="0.13"/>
+                    <circle cx="800" cy="100" r="7" fill="#00bfae"/>
+                </g>
+            </svg>
         </div>
+        <div class="container hero__container hero__container--creative-grid">
+            <div class="hero__content-block">
+                <div class="hero__subtitle">Твое новое приключение</div>
+                <h1 class="hero__title">Путешествуй <span class="hero__wow">ярко</span> и <span class="hero__wow">уникально</span></h1>
+                <div class="hero__slogan">Открой мир с TravelPro — авторские туры, эмоции, которые останутся с тобой навсегда.</div>
+                <a href="#tours" class="btn btn--gradient btn--big btn--pulse"><span>✈️</span> Найти свой тур</a>
+            </div>
+            <div class="hero__visual-block">
+                <div class="hero__illu-wrap">
+                    <svg class="hero__image-creative" viewBox="0 0 420 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#fbc2eb"/>
+                                <stop offset="100%" stop-color="#a18cd1"/>
+                            </linearGradient>
+                            <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#00bfae"/>
+                                <stop offset="100%" stop-color="#ff5e62"/>
+                            </linearGradient>
+                        </defs>
+                        <!-- Чемодан -->
+                        <rect x="80" y="180" width="120" height="80" rx="18" fill="url(#bg1)" stroke="#fff" stroke-width="4"/>
+                        <rect x="110" y="160" width="60" height="30" rx="10" fill="#fff" stroke="#a18cd1" stroke-width="3"/>
+                        <circle cx="100" cy="260" r="8" fill="#fff" stroke="#00bfae" stroke-width="3"/>
+                        <circle cx="180" cy="260" r="8" fill="#fff" stroke="#00bfae" stroke-width="3"/>
+                        <!-- Глобус -->
+                        <circle cx="320" cy="120" r="48" fill="url(#bg2)" stroke="#fff" stroke-width="4"/>
+                        <ellipse cx="320" cy="120" rx="38" ry="18" fill="#fff" opacity="0.18"/>
+                        <!-- Самолет -->
+                        <g>
+                            <rect x="260" y="60" width="60" height="12" rx="6" fill="#fff" stroke="#ff5e62" stroke-width="2"/>
+                            <polygon points="320,66 340,56 340,76" fill="#ff5e62"/>
+                            <rect x="315" y="62" width="10" height="8" rx="2" fill="#00bfae"/>
+                        </g>
+                        <!-- Облака -->
+                        <ellipse cx="60" cy="80" rx="28" ry="12" fill="#fff" opacity="0.7"/>
+                        <ellipse cx="370" cy="60" rx="18" ry="8" fill="#fff" opacity="0.5"/>
+                        <!-- Маршрут -->
+                        <path d="M120 220 Q200 100 320 120" stroke="#00bfae" stroke-width="3" fill="none" stroke-dasharray="8 8"/>
+                        <circle cx="120" cy="220" r="6" fill="#ff5e62"/>
+                        <circle cx="320" cy="120" r="6" fill="#00bfae"/>
+                    </svg>
+                    <svg class="hero__plane-svg" width="80" height="40" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 30 Q40 10 70 30" stroke="#ff5e62" stroke-width="2" fill="none"/>
+                        <circle cx="70" cy="30" r="4" fill="#00bfae"/>
+                        <rect x="68" y="27" width="8" height="3" rx="1.5" fill="#fff" opacity="0.7"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="hero__waves hero__waves--creative"></div>
     </section>
 
-    <section id="tours" class="demo-section">
+    <section id="tours" class="tours tours--masonry">
         <div class="container">
             <h2>Популярные туры</h2>
-            <div class="tours__grid">
-                <div class="tour-card">
-                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&auto=format&fit=crop&q=80" alt="Тур: Италия">
-                    <div class="tour-card__content">
-                        <h3>Италия: Рим, Флоренция, Венеция</h3>
-                        <p>8 дней / 7 ночей</p>
-                        <ul class="tour-features">
-                            <li>Перелет</li>
-                            <li>Отель 4*</li>
-                            <li>Завтраки</li>
-                            <li>Экскурсии</li>
-                        </ul>
-                        <div class="tour-price">
-                            <span>от 85 000 ₽</span>
-                            <a href="#contact" class="btn-travel">Забронировать</a>
+            <div class="tours__masonry">
+                <div class="card tour-card">
+                    <div class="tour-card__tags"><span>#экскурсия</span><span>#город</span></div>
+                    <div class="tour-card__img-wrap">
+                        <img class="tour-card__img" src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=400&q=80" alt="Нью-Йорк & США" />
+                        <div class="tour-card__overlay">
+                            <button class="btn btn--mini">Подробнее</button>
                         </div>
                     </div>
+                    <div class="tour-card__icon">🗽</div>
+                    <h3>Нью-Йорк & США</h3>
+                    <p>Городские приключения, небоскрёбы, арт и гастрономия.</p>
+                    <span class="tour-card__price">от 120 000 ₽</span>
                 </div>
-                <div class="tour-card">
-                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&auto=format&fit=crop&q=80" alt="Тур: Греция">
-                    <div class="tour-card__content">
-                        <h3>Греция: Афины, Санторини</h3>
-                        <p>7 дней / 6 ночей</p>
-                        <ul class="tour-features">
-                            <li>Перелет</li>
-                            <li>Отель 4*</li>
-                            <li>Завтраки</li>
-                            <li>Экскурсии</li>
-                        </ul>
-                        <div class="tour-price">
-                            <span>от 75 000 ₽</span>
-                            <a href="#contact" class="btn-travel">Забронировать</a>
+                <div class="card tour-card">
+                    <div class="tour-card__tags"><span>#пляж</span><span>#романтика</span></div>
+                    <div class="tour-card__img-wrap">
+                        <img class="tour-card__img" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Мальдивы & Океания" />
+                        <div class="tour-card__overlay">
+                            <button class="btn btn--mini">Подробнее</button>
                         </div>
                     </div>
+                    <div class="tour-card__icon">🏝️</div>
+                    <h3>Мальдивы & Океания</h3>
+                    <p>Бирюзовые лагуны, дайвинг, романтика и релакс.</p>
+                    <span class="tour-card__price">от 180 000 ₽</span>
                 </div>
-                <div class="tour-card">
-                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&auto=format&fit=crop&q=80" alt="Тур: Испания">
-                    <div class="tour-card__content">
-                        <h3>Испания: Барселона, Мадрид</h3>
-                        <p>6 дней / 5 ночей</p>
-                        <ul class="tour-features">
-                            <li>Перелет</li>
-                            <li>Отель 4*</li>
-                            <li>Завтраки</li>
-                            <li>Экскурсии</li>
-                        </ul>
-                        <div class="tour-price">
-                            <span>от 65 000 ₽</span>
-                            <a href="#contact" class="btn-travel">Забронировать</a>
+                <div class="card tour-card">
+                    <div class="tour-card__tags"><span>#экстрим</span><span>#горы</span></div>
+                    <div class="tour-card__img-wrap">
+                        <img class="tour-card__img" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=400&q=80" alt="Швейцария & Альпы" />
+                        <div class="tour-card__overlay">
+                            <button class="btn btn--mini">Подробнее</button>
                         </div>
                     </div>
+                    <div class="tour-card__icon">⛷️</div>
+                    <h3>Швейцария & Альпы</h3>
+                    <p>Горные лыжи, уютные шале, шоколад и панорамы.</p>
+                    <span class="tour-card__price">от 150 000 ₽</span>
+                </div>
+                <div class="card tour-card">
+                    <div class="tour-card__tags"><span>#сафари</span><span>#базар</span></div>
+                    <div class="tour-card__img-wrap">
+                        <img class="tour-card__img" src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80" alt="Марокко & Африка" />
+                        <div class="tour-card__overlay">
+                            <button class="btn btn--mini">Подробнее</button>
+        </div>
+                    </div>
+                    <div class="tour-card__icon">🏜️</div>
+                    <h3>Марокко & Африка</h3>
+                    <p>Сафари, пустыни, восточные базары и специи.</p>
+                    <span class="tour-card__price">от 110 000 ₽</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="destinations" class="demo-section" style="background-color: #F0F4F8;">
+    <section id="advantages" class="advantages advantages--stepper">
         <div class="container">
-            <h2>Направления</h2>
-            <div class="destinations__grid">
-                <div class="destination-card">
-                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&auto=format&fit=crop&q=80" alt="Европа">
-                    <div class="destination-card__content">
-                        <h3>Европа</h3>
-                        <p>Культурные столицы, исторические достопримечательности и гастрономические туры</p>
-                    </div>
+            <h2>Почему выбирают нас</h2>
+            <div class="advantages__stepper">
+                <div class="adv-card adv-card--step">
+                    <div class="adv-card__icon adv-card__icon--circle">🎨</div>
+                    <h3>Креативные маршруты</h3>
+                    <p>Авторские туры и необычные направления для вдохновения.</p>
                 </div>
-                <div class="destination-card">
-                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&auto=format&fit=crop&q=80" alt="Азия">
-                    <div class="destination-card__content">
-                        <h3>Азия</h3>
-                        <p>Экзотические страны, древние традиции и современные мегаполисы</p>
-                    </div>
+                <div class="adv-card adv-card--step">
+                    <div class="adv-card__icon adv-card__icon--circle">🤝</div>
+                    <h3>Персональный подход</h3>
+                    <p>Каждый маршрут — под ваши интересы и мечты.</p>
                 </div>
-                <div class="destination-card">
-                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&auto=format&fit=crop&q=80" alt="Америка">
-                    <div class="destination-card__content">
-                        <h3>Америка</h3>
-                        <p>Невероятные природные красоты, национальные парки и яркие города</p>
-                    </div>
+                <div class="adv-card adv-card--step">
+                    <div class="adv-card__icon adv-card__icon--circle">💸</div>
+                    <h3>Честные цены</h3>
+                    <p>Прозрачная смета, никаких скрытых платежей.</p>
+                </div>
+                <div class="adv-card adv-card--step">
+                    <div class="adv-card__icon adv-card__icon--circle">🌐</div>
+                    <h3>24/7 поддержка</h3>
+                    <p>Помощь и забота на каждом этапе путешествия.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services" class="demo-section">
-        <div class="container">
-            <h2>Наши услуги</h2>
-            <div class="services__grid">
-                <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&auto=format&fit=crop&q=80" alt="Групповые туры">
-                    <h3>Групповые туры</h3>
-                    <p>Готовые туры с фиксированными датами и программой</p>
-                </div>
-                <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&auto=format&fit=crop&q=80" alt="Индивидуальные туры">
-                    <h3>Индивидуальные туры</h3>
-                    <p>Персональные путешествия с учетом ваших пожеланий</p>
-                </div>
-                <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&auto=format&fit=crop&q=80" alt="Визовая поддержка">
-                    <h3>Визовая поддержка</h3>
-                    <p>Помощь в оформлении виз и необходимых документов</p>
-                </div>
+    <section id="contact" class="contact contact--split">
+        <div class="container contact__container contact__container--split">
+            <div class="contact__illustration">
+                <!-- Sunset with Palm Trees by 1010clipart.com, free for commercial use -->
+                <svg class="contact__sunset-svg" viewBox="0 0 500 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#ffb347"/>
+                            <stop offset="100%" stop-color="#de8297"/>
+                        </linearGradient>
+                    </defs>
+                    <rect width="500" height="300" fill="url(#sky)"/>
+                    <ellipse cx="250" cy="220" rx="120" ry="50" fill="#fffbe7" opacity="0.7"/>
+                    <ellipse cx="250" cy="220" rx="80" ry="30" fill="#ffb347"/>
+                    <ellipse cx="250" cy="220" rx="40" ry="15" fill="#fffbe7" opacity="0.5"/>
+                    <!-- Palm trees -->
+                    <g>
+                        <rect x="110" y="120" width="8" height="90" rx="4" fill="#2d2d2d"/>
+                        <path d="M114 120 Q100 110 130 125" stroke="#2d2d2d" stroke-width="5" fill="none"/>
+                        <path d="M114 130 Q95 120 135 135" stroke="#2d2d2d" stroke-width="4" fill="none"/>
+                        <path d="M114 140 Q100 140 130 145" stroke="#2d2d2d" stroke-width="3" fill="none"/>
+                    </g>
+                    <g>
+                        <rect x="370" y="140" width="7" height="70" rx="3.5" fill="#2d2d2d"/>
+                        <path d="M373 140 Q360 130 390 145" stroke="#2d2d2d" stroke-width="4" fill="none"/>
+                        <path d="M373 150 Q355 140 395 155" stroke="#2d2d2d" stroke-width="3" fill="none"/>
+                        <path d="M373 160 Q360 160 390 165" stroke="#2d2d2d" stroke-width="2" fill="none"/>
+                    </g>
+                    <!-- Ground -->
+                    <ellipse cx="250" cy="270" rx="200" ry="30" fill="#de8297" opacity="0.7"/>
+                    <!-- Clouds -->
+                    <ellipse cx="80" cy="60" rx="30" ry="10" fill="#fff" opacity="0.7"/>
+                    <ellipse cx="420" cy="50" rx="22" ry="8" fill="#fff" opacity="0.5"/>
+                </svg>
             </div>
-        </div>
-    </section>
-
-    <section id="contact" class="demo-section" style="background-color: #F0F4F8;">
-        <div class="container">
-            <h2>Связаться с нами</h2>
-            <p>Оставьте заявку, и мы подберем для вас идеальное путешествие.</p>
-            <div class="contact__form">
-                <form>
+            <div class="contact__form-wrap">
+                <h2>Оставьте заявку</h2>
+                <p>Мы подберём для вас идеальное путешествие и ответим на все вопросы.</p>
+                <form class="contact__form" id="contact-form">
                     <div class="form-group">
-                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="text" name="name" placeholder="Ваше имя" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Ваш email" required>
+                        <input type="email" name="email" placeholder="Email" required>
                     </div>
                     <div class="form-group">
-                        <input type="tel" placeholder="Ваш телефон" required>
+                        <input type="tel" name="phone" placeholder="Телефон" required>
                     </div>
                     <div class="form-group">
-                        <select required>
+                        <select name="service" required>
                             <option value="">Выберите услугу</option>
                             <option value="group">Групповой тур</option>
                             <option value="individual">Индивидуальный тур</option>
@@ -168,33 +246,54 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Опишите ваши пожелания" rows="4" required></textarea>
+                        <textarea name="message" placeholder="Опишите ваши пожелания" rows="4" required></textarea>
                     </div>
-                    <button type="submit" class="btn-travel">Отправить заявку</button>
+                    <button type="submit" class="btn btn--gradient">Отправить заявку</button>
+                    <div class="form__success" id="form-success" style="display:none;">Спасибо! Мы свяжемся с вами.</div>
                 </form>
             </div>
         </div>
     </section>
 
-    <footer class="demo-footer travel-footer">
-        <div class="container">
-            <div class="footer__content">
-                <div class="footer__info">
-                    <h3>TravelPro</h3>
-                    <p>Телефон: +7 (000) 000-00-10</p>
-                    <p>Email: info@travelpro.example</p>
-                    <p>Адрес: г. Москва, ул. Туристическая, 1</p>
+    <footer class="footer footer--creative">
+        <div class="footer__waves footer__waves--creative"></div>
+        <div class="container footer__container footer__container--grid">
+            <div class="footer__col footer__col--left">
+                <div class="footer__logo">
+                    <span>🌍</span>
+                    <span>TravelPro</span>
                 </div>
-                <div class="footer__nav">
-                    <a href="#tours">Туры</a>
-                    <a href="#destinations">Направления</a>
-                    <a href="#services">Услуги</a>
-                    <a href="#contact">Контакты</a>
+                <div class="footer__contacts">
+                    <a href="tel:+70000000010">+7 (000) 000-00-10</a> |
+                    <a href="mailto:info@travelpro.example">info@travelpro.example</a>
+                </div>
+                <div class="footer__socials footer__socials--creative">
+                    <a href="#" title="Instagram" class="footer__social footer__social--creative"><span>📸</span></a>
+                    <a href="#" title="Telegram" class="footer__social footer__social--creative"><span>✈️</span></a>
+                    <a href="#" title="VK" class="footer__social footer__social--creative"><span>🌐</span></a>
                 </div>
             </div>
-            <p class="footer__copyright">&copy; 2024 TravelPro. Все права защищены.</p>
-            <p><a href="../../index.html">Вернуться на главный сайт YaRadik</a></p>
+            <div class="footer__col footer__col--right">
+                <div class="footer__cta">Путешествуй с нами — <b>создай свою историю!</b></div>
+                <nav class="footer__nav">
+                    <a href="#tours">Туры</a>
+                    <a href="#advantages">Преимущества</a>
+                    <a href="#contact">Заявка</a>
+                </nav>
+                <svg class="footer__svg-illu" width="90" height="70" viewBox="0 0 90 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="10" y="40" width="60" height="18" rx="6" fill="#fffbe7" opacity="0.7"/>
+                    <rect x="20" y="30" width="40" height="18" rx="6" fill="#fbc2eb" opacity="0.7"/>
+                    <rect x="30" y="20" width="20" height="18" rx="6" fill="#a18cd1" opacity="0.7"/>
+                    <rect x="40" y="10" width="10" height="18" rx="5" fill="#ff5e62" opacity="0.7"/>
+                    <circle cx="80" cy="60" r="7" fill="#00bfae" opacity="0.7"/>
+                    <rect x="60" y="55" width="18" height="6" rx="3" fill="#fff" opacity="0.7"/>
+                </svg>
+            </div>
         </div>
+        <div class="footer__copy">© 2024 TravelPro — Креативные путешествия</div>
+        <a href="#" class="footer__up" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Наверх ↑</a>
     </footer>
+
+    <script src="../js/script.js"></script>
 </body>
 </html> 

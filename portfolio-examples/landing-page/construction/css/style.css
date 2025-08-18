@@ -1,47 +1,426 @@
-/* Construction Demo Styles - ROBUST & RELIABLE */
+/* Современный стиль для лендинга "Строительная компания" inspired by themashina.ru */
+
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    line-height: 1.7;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #222;
+    background: #fff;
     margin: 0;
+    line-height: 1.6;
 }
-.container { width: 90%; max-width: 1100px; margin: 0 auto; padding: 0 15px; }
-h1, h2 { font-family: 'Roboto Condensed', sans-serif; color: #D97706; /* Orange/Brown accent */ }
-h1 { font-size: 2rem; }
-h2 { font-size: 1.8rem; text-align: center; margin-bottom: 1.5em; }
 
-.demo-header.construction-header { background-color: #F7FAFC; /* Light Gray */ padding: 1em 0; border-bottom: 3px solid #FBBF24; /* Yellow accent */ }
-.construction-header h1 { color: #D97706; margin:0; font-size: 1.5rem; text-align: left; }
-.construction-header .container { display:flex; justify-content: space-between; align-items:center; }
-.demo-nav a { color: #555; text-decoration: none; margin-left: 1em; font-weight: bold; }
-.demo-nav a:hover { color: #D97706; }
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
 
-.hero-construction { text-align: center; padding: 2em 0; background-color: #FFFBEB; /* Very light yellow */ }
-.hero-construction h2 { font-size: 2.2rem; }
-.hero-construction p { font-size: 1.1rem; color: #555; margin-bottom: 1.5em; }
-
-.btn-construction {
-    display: inline-block;
-    padding: 0.9em 2em;
-    font-family: 'Roboto Condensed', sans-serif;
+.header {
+    background: #fff;
+    border-bottom: 2px solid #f5c518;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
     font-weight: 700;
+    font-size: 1.3rem;
+    color: #222;
+}
+.header__logo img {
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+}
+.nav a {
+    color: #222;
     text-decoration: none;
-    border-radius: 4px;
-    background-color: #F59E0B; /* Amber */
-    color: white;
-    transition: background-color 0.3s ease;
-    margin-top: 1em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left: 2.2em;
+    transition: color 0.2s;
+    position: relative;
 }
-.btn-construction:hover { background-color: #D97706; /* Darker Amber */ }
+.nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f5c518;
+    transition: width 0.3s;
+    position: absolute;
+    left: 0; bottom: -4px;
+}
+.nav a:hover {
+    color: #f5c518;
+}
+.nav a:hover::after {
+    width: 100%;
+}
 
-.demo-section { padding: 3em 0; }
-.demo-placeholder-image {
-    background-color: #E2E8F0;
-    display: flex; align-items: center; justify-content: center;
-    color: #718096; font-size: 1rem; text-align: center;
-    border-radius: 4px; margin-top: 1em; padding: 2em;
-    border: 1px dashed #A0AEC0;
+.hero {
+    background: linear-gradient(90deg, #f5c518 0%, #fffbe6 100%);
+    padding: 60px 0 40px 0;
 }
-.demo-footer.construction-footer { background-color: #4A5568; /* Dark Gray */ color: #E2E8F0; padding: 2em 0; text-align: center; font-size: 0.9em; }
+.hero__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+.hero__content {
+    flex: 1 1 340px;
+    min-width: 300px;
+}
+.hero__content h1 {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin: 0 0 18px 0;
+    color: #222;
+}
+.hero__content p {
+    font-size: 1.2rem;
+    margin-bottom: 28px;
+    color: #444;
+}
+.hero__image {
+    flex: 1 1 340px;
+    min-width: 260px;
+    text-align: right;
+}
+.hero__image img {
+    max-width: 420px;
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1em 2.2em;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: none;
+    background: #222;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.btn--primary {
+    background: #f5c518;
+    color: #222;
+}
+.btn--primary:hover {
+    background: #222;
+    color: #fff;
+    transform: translateY(-2px) scale(1.03);
+}
+
+/* Секции */
+section {
+    padding: 60px 0 40px 0;
+}
+h2 {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+/* Карточки услуг и преимуществ */
+.services__list, .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+.card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    padding: 32px 24px 24px 24px;
+    flex: 1 1 220px;
+    min-width: 220px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+    position: relative;
+    cursor: pointer;
+}
+.card__icon {
+    font-size: 2.5rem;
+    margin-bottom: 18px;
+}
+.card h3 {
+    font-size: 1.2rem;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    margin: 0 0 10px 0;
+    color: #222;
+}
+.card p {
+    color: #444;
+    font-size: 1rem;
+    text-align: center;
+}
+.card:hover {
+    box-shadow: 0 8px 32px rgba(245,197,24,0.15), 0 2px 8px rgba(0,0,0,0.10);
+    transform: translateY(-4px) scale(1.03);
+}
+
+/* Галерея портфолио */
+.portfolio__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    justify-content: center;
+}
+.portfolio__item {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    overflow: hidden;
+    width: 260px;
+    cursor: pointer;
+    transition: box-shadow 0.2s, transform 0.2s;
+    position: relative;
+}
+.portfolio__item img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+}
+.portfolio__desc {
+    padding: 14px 12px 10px 12px;
+    font-size: 1rem;
+    color: #222;
+    background: #fffbe6;
+    text-align: center;
+}
+.portfolio__item:hover {
+    box-shadow: 0 8px 32px rgba(245,197,24,0.15), 0 2px 8px rgba(0,0,0,0.10);
+    transform: translateY(-4px) scale(1.03);
+}
+
+/* Модальное окно */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0; width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.45);
+    align-items: center;
+    justify-content: center;
+}
+.modal.active { display: flex; }
+.modal__overlay {
+    position: absolute;
+    left: 0; top: 0; width: 100vw; height: 100vh;
+    background: transparent;
+}
+.modal__content {
+    position: relative;
+    background: #fff;
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    max-width: 90vw;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal__content img {
+    max-width: 70vw;
+    max-height: 70vh;
+    border-radius: 12px;
+}
+.modal__close {
+    position: absolute;
+    top: 8px; right: 12px;
+    background: #f5c518;
+    color: #222;
+    border: none;
+    border-radius: 50%;
+    width: 36px; height: 36px;
+    font-size: 1.7rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: background 0.2s;
+}
+.modal__close:hover {
+    background: #222;
+    color: #fff;
+}
+
+/* Контакты и форма */
+.contact__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
+}
+.contact__info {
+    flex: 1 1 260px;
+    min-width: 220px;
+}
+.contact__list {
+    list-style: none;
+    padding: 0;
+    margin: 18px 0 0 0;
+    color: #444;
+    font-size: 1rem;
+}
+.contact__form {
+    flex: 1 1 320px;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: #fffbe6;
+    border-radius: 14px;
+    padding: 28px 22px 22px 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+.contact__form input,
+.contact__form textarea {
+    font-size: 1rem;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    margin-bottom: 2px;
+    background: #fff;
+    transition: border 0.2s;
+    resize: none;
+}
+.contact__form input:focus,
+.contact__form textarea:focus {
+    border: 1.5px solid #f5c518;
+}
+.contact__form button {
+    margin-top: 8px;
+}
+.form__success {
+    color: #1a8917;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Футер */
+.footer {
+    background: #222;
+    color: #fff;
+    padding: 32px 0 18px 0;
+    font-size: 1rem;
+}
+.footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+}
+.footer__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.footer__logo img {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+.footer__contacts a {
+    color: #f5c518;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: 500;
+}
+.footer__contacts a:hover {
+    text-decoration: underline;
+}
+.footer__copy {
+    color: #fff;
+    font-size: 0.95rem;
+    margin-top: 8px;
+}
+
+/* Адаптивность */
+@media (max-width: 900px) {
+    .hero__container, .contact__container, .footer__container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 28px;
+    }
+    .hero__image {
+        text-align: center;
+    }
+    .footer__container {
+        align-items: center;
+    }
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 0 6px;
+    }
+    .hero__content h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    .card, .portfolio__item {
+        min-width: 90vw;
+        max-width: 98vw;
+    }
+    .portfolio__gallery {
+        gap: 14px;
+    }
+    .services__list, .advantages__list {
+        gap: 14px;
+    }
+    .contact__form {
+        padding: 16px 6px 12px 6px;
+    }
+}
+
+/* Анимация появления секций */
+.section--hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s, transform 0.7s;
+}
+.section--visible {
+    opacity: 1;
+    transform: none;
+}

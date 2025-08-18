@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Отзывы клиентов - YaRadik</title>
-    <meta name="description" content="Отзывы клиентов о работе с YaRadik. Реальные истории успеха и результаты проектов.">
+    <meta name="description" content="Отзывы клиентов о работе с YaRadik. Реальные истории успеха и результаты проектов в Казахстане.">
     
     <!-- Preload critical assets -->
     <link rel="preload" href="css/style.css" as="style">
@@ -14,7 +14,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -34,7 +34,7 @@
                     <li class="nav__item"><a href="index.html#services" class="nav__link">Услуги</a></li>
                     <li class="nav__item"><a href="index.html#portfolio" class="nav__link">Портфолио</a></li>
                     <li class="nav__item"><a href="index.html#workflow" class="nav__link">Этапы работы</a></li>
-                    <li class="nav__item"><a href="reviews.html" class="nav__link">Отзывы</a></li>
+                    <li class="nav__item"><a href="reviews.html" class="nav__link active">Отзывы</a></li>
                 </ul>
             </nav>
             <a href="https://wa.me/77081538703" target="_blank" class="btn btn--primary header__cta">Связаться в WhatsApp</a>
@@ -49,111 +49,140 @@
     <main>
         <section class="section-padding">
             <div class="container">
-                <h1 class="page-title">Отзывы клиентов</h1>
-                <div class="reviews-list">
-                    <div class="review-full-card">
-                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&auto=format&fit=crop&q=60" alt="Фото клиента: Анна М." class="review-full-card__photo">
-                        <div class="review-full-card__content">
-                            <h3 class="review-full-card__name">Анна М.</h3>
-                            <p class="review-full-card__company">Салон красоты "Шарм"</p>
-                            <div class="review-full-card__text">
-                                <p>Радик разработал для нас потрясающий лендинг! Клиенты сразу отмечают удобство и стильный дизайн. Количество записей увеличилось на 40% после запуска сайта.</p>
-                                <p>Особенно хочу отметить внимательность к деталям и готовность вносить правки. Радик всегда был на связи и оперативно решал все вопросы.</p>
+                <h1 class="page-title">Отзывы моих клиентов</h1>
+                <p class="page-subtitle">Реальные истории и результаты совместной работы.</p>
+                <div class="reviews__grid reviews__grid--animated" style="margin-top: 40px;">
+
+                    <!-- Review 1 (женский аватар) -->
+                    <div class="review-card fade-in" data-delay="0">
+                        <div class="review-card__author">
+                            <svg class="review-card__photo" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="35" cy="35" r="35" fill="#E2E8F0"/><ellipse cx="35" cy="32" rx="13" ry="13" fill="#F9D7E2"/><ellipse cx="35" cy="52" rx="18" ry="10" fill="#F9D7E2"/><ellipse cx="35" cy="32" rx="8" ry="8" fill="#fff"/><ellipse cx="35" cy="32" rx="5" ry="5" fill="#F9D7E2"/></svg>
+                        </div>
+                        <div class="review-card__body">
+                            <div class="review-card__header">
+                                <span class="review-card__name">Анна М.</span>
+                                <span class="review-card__company">Салон красоты "Шарм"</span>
+                                <span class="review-card__stars">★★★★★</span>
                             </div>
+                            <p class="review-card__text">Радик разработал для нас потрясающий лендинг! Клиенты сразу отмечают удобство и стильный дизайн. Количество записей увеличилось на 40% после запуска сайта, что превзошло все наши ожидания. Очень рекомендую!</p>
+                            <span class="review-card__date">21 мая 2024</span>
                         </div>
                     </div>
 
-                    <div class="review-full-card">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=60" alt="Фото клиента: Иван П." class="review-full-card__photo">
-                        <div class="review-full-card__content">
-                            <h3 class="review-full-card__name">Иван П.</h3>
-                            <p class="review-full-card__company">Юридическая фирма "Правовед"</p>
-                            <div class="review-full-card__text">
-                                <p>Заказывали сайт-визитку для нашей юридической фирмы. Все сделано профессионально и в срок. Радик учел все наши пожелания и предложил отличные решения.</p>
-                                <p>Сайт получился современным и удобным для клиентов. Отдельное спасибо за SEO-оптимизацию - мы уже получаем первых клиентов из поиска.</p>
+                    <!-- Review 2 (мужской аватар) -->
+                    <div class="review-card fade-in" data-delay="1">
+                        <div class="review-card__author">
+                            <svg class="review-card__photo" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="35" cy="35" r="35" fill="#E2E8F0"/><ellipse cx="35" cy="32" rx="13" ry="13" fill="#B3D4FC"/><ellipse cx="35" cy="52" rx="18" ry="10" fill="#B3D4FC"/><ellipse cx="35" cy="32" rx="8" ry="8" fill="#fff"/><ellipse cx="35" cy="32" rx="5" ry="5" fill="#B3D4FC"/></svg>
+                        </div>
+                        <div class="review-card__body">
+                            <div class="review-card__header">
+                                <span class="review-card__name">Иван П.</span>
+                                <span class="review-card__company">Юридическая фирма "Правовед"</span>
+                                <span class="review-card__stars">★★★★☆</span>
                             </div>
+                            <p class="review-card__text">Заказывали сайт-визитку. Все сделано профессионально и в срок. Радик учел все пожелания и предложил отличные решения по структуре. Теперь у нас солидный и современный сайт, который вызывает доверие.</p>
+                            <span class="review-card__date">18 апреля 2024</span>
                         </div>
                     </div>
 
-                    <div class="review-full-card">
-                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&auto=format&fit=crop&q=60" alt="Фото клиента: Елена К." class="review-full-card__photo">
-                        <div class="review-full-card__content">
-                            <h3 class="review-full-card__name">Елена К.</h3>
-                            <p class="review-full-card__company">Магазин игрушек "Радость"</p>
-                            <div class="review-full-card__text">
-                                <p>Благодаря Радику у нас появился полноценный интернет-магазин с удобной системой оплаты и доставки. Продажи выросли в 2 раза!</p>
-                                <p>Очень понравилось, что Радик не только разработал сайт, но и помог с настройкой аналитики и интеграцией с CRM-системой.</p>
+                    <!-- Review 3 (женский аватар) -->
+                    <div class="review-card fade-in" data-delay="2">
+                        <div class="review-card__author">
+                            <svg class="review-card__photo" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="35" cy="35" r="35" fill="#E2E8F0"/><ellipse cx="35" cy="32" rx="13" ry="13" fill="#F9D7E2"/><ellipse cx="35" cy="52" rx="18" ry="10" fill="#F9D7E2"/><ellipse cx="35" cy="32" rx="8" ry="8" fill="#fff"/><ellipse cx="35" cy="32" rx="5" ry="5" fill="#F9D7E2"/></svg>
+                        </div>
+                        <div class="review-card__body">
+                            <div class="review-card__header">
+                                <span class="review-card__name">Елена К.</span>
+                                <span class="review-card__company">Магазин игрушек "Радость"</span>
+                                <span class="review-card__stars">★★★★★</span>
                             </div>
+                            <p class="review-card__text">Благодаря Радику у нас появился полноценный интернет-магазин. Особенно порадовала простая административная панель. Продажи выросли в 2 раза за первые 3 месяца, это просто фантастика!</p>
+                            <span class="review-card__date">10 марта 2024</span>
                         </div>
                     </div>
 
-                    <div class="review-full-card">
-                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&auto=format&fit=crop&q=60" alt="Фото клиента: Сергей В." class="review-full-card__photo">
-                        <div class="review-full-card__content">
-                            <h3 class="review-full-card__name">Сергей В.</h3>
-                            <p class="review-full-card__company">IT-компания "ИнноваТех"</p>
-                            <div class="review-full-card__text">
-                                <p>Заказывали корпоративный сайт для нашей IT-компании. Радик создал современный и функциональный ресурс, который отлично представляет нашу компанию.</p>
-                                <p>Особенно впечатлила скорость работы и качество кода. Сайт загружается мгновенно и отлично работает на всех устройствах.</p>
+                    <!-- Review 4 (мужской аватар) -->
+                    <div class="review-card fade-in" data-delay="3">
+                        <div class="review-card__author">
+                            <svg class="review-card__photo" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="35" cy="35" r="35" fill="#E2E8F0"/><ellipse cx="35" cy="32" rx="13" ry="13" fill="#B3D4FC"/><ellipse cx="35" cy="52" rx="18" ry="10" fill="#B3D4FC"/><ellipse cx="35" cy="32" rx="8" ry="8" fill="#fff"/><ellipse cx="35" cy="32" rx="5" ry="5" fill="#B3D4FC"/></svg>
+                        </div>
+                        <div class="review-card__body">
+                            <div class="review-card__header">
+                                <span class="review-card__name">Тимур С.</span>
+                                <span class="review-card__company">СК "КазСтрой"</span>
+                                <span class="review-card__stars">★★★★☆</span>
                             </div>
+                            <p class="review-card__text">Нужен был корпоративный сайт для представления наших объектов. Результат превзошел ожидания. Дизайн строгий, информация подана четко. Получили уже несколько крупных заявок через форму на сайте. Отличная работа!</p>
+                            <span class="review-card__date">28 февраля 2024</span>
                         </div>
                     </div>
 
-                     <div class="review-full-card">
-                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=60" alt="Фото клиента: Мария С." class="review-full-card__photo">
-                        <div class="review-full-card__content">
-                            <h3 class="review-full-card__name">Мария С.</h3>
-                            <p class="review-full-card__company">Ресторан "Вкусный"</p>
-                            <div class="review-full-card__text">
-                                <p>Радик разработал для нас лендинг с системой онлайн-заказа. Теперь клиенты могут заказать доставку прямо с сайта, что значительно упростило работу.</p>
-                                <p>Сайт получился не только красивым, но и очень удобным для пользователей. Количество заказов через сайт растет с каждым днем.</p>
-                            </div>
+                    <!-- Review 5 (женский аватар) -->
+                    <div class="review-card fade-in" data-delay="4">
+                        <div class="review-card__author">
+                            <svg class="review-card__photo" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="35" cy="35" r="35" fill="#E2E8F0"/><ellipse cx="35" cy="32" rx="13" ry="13" fill="#F9D7E2"/><ellipse cx="35" cy="52" rx="18" ry="10" fill="#F9D7E2"/><ellipse cx="35" cy="32" rx="8" ry="8" fill="#fff"/><ellipse cx="35" cy="32" rx="5" ry="5" fill="#F9D7E2"/></svg>
                         </div>
+                        <div class="review-card__body">
+                            <div class="review-card__header">
+                                <span class="review-card__name">Динара А.</span>
+                                <span class="review-card__company">Турагентство "Вокруг Света"</span>
+                                <span class="review-card__stars">★★★★★</span>
+                            </div>
+                            <p class="review-card__text">Сайт для нашего турагентства получился очень 'вкусным' и продающим. Яркие фотографии, удобный подбор туров. Радик предложил и реализовал интеграцию с нашей базой, что очень упростило работу менеджеров.</p>
+                            <span class="review-card__date">15 января 2024</span>
+                        </div>
+                    </div>
+
+                    <!-- Review 6 (мужской аватар) -->
+                    <div class="review-card fade-in" data-delay="5">
+                        <div class="review-card__author">
+                            <svg class="review-card__photo" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="35" cy="35" r="35" fill="#E2E8F0"/><ellipse cx="35" cy="32" rx="13" ry="13" fill="#B3D4FC"/><ellipse cx="35" cy="52" rx="18" ry="10" fill="#B3D4FC"/><ellipse cx="35" cy="32" rx="8" ry="8" fill="#fff"/><ellipse cx="35" cy="32" rx="5" ry="5" fill="#B3D4FC"/></svg>
+                        </div>
+                        <div class="review-card__body">
+                            <div class="review-card__header">
+                                <span class="review-card__name">Андрей К.</span>
+                                <span class="review-card__company">Фитнес-центр "Энергия"</span>
+                                <span class="review-card__stars">★★★★☆</span>
+                            </div>
+                            <p class="review-card__text">Заказывали лендинг для акции 'Лето в форме'. Конверсия оказалась на 15% выше, чем мы прогнозировали. Все было сделано быстро, четко и с пониманием нашей целевой аудитории. Будем обращаться еще.</p>
+                            <span class="review-card__date">5 декабря 2023</span>
+                        </div>
+                    </div>
+
+                    <!-- Review 7 (женский аватар) -->
+                    <div class="review-card fade-in" data-delay="6">
+                        <div class="review-card__author">
+                            <svg class="review-card__photo" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="35" cy="35" r="35" fill="#E2E8F0"/><ellipse cx="35" cy="32" rx="13" ry="13" fill="#F9D7E2"/><ellipse cx="35" cy="52" rx="18" ry="10" fill="#F9D7E2"/><ellipse cx="35" cy="32" rx="8" ry="8" fill="#fff"/><ellipse cx="35" cy="32" rx="5" ry="5" fill="#F9D7E2"/></svg>
+                        </div>
+                        <div class="review-card__body">
+                            <div class="review-card__header">
+                                <span class="review-card__name">Алия Б.</span>
+                                <span class="review-card__company">Частный психолог</span>
+                                <span class="review-card__stars">★★★★★</span>
+                            </div>
+                            <p class="review-card__text">Мне нужен был простой, но вызывающий доверие сайт-визитка. Радик прекрасно справился с задачей. Дизайн спокойный, тексты хорошо структурированы. Теперь клиентам проще найти информацию обо мне и записаться.</p>
+                            <span class="review-card__date">20 ноября 2023</span>
                     </div>
                 </div>
 
-                 <div class="reviews-page__cta">
-                    <h2 class="section-title">Хотите стать следующим довольным клиентом?</h2>
-                    <a href="https://wa.me/77081538703" target="_blank" class="btn btn--primary btn-large">Обсудить проект</a>
+                    <!-- Review 8 (мужской аватар) -->
+                    <div class="review-card fade-in" data-delay="7">
+                        <div class="review-card__author">
+                            <svg class="review-card__photo" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="35" cy="35" r="35" fill="#E2E8F0"/><ellipse cx="35" cy="32" rx="13" ry="13" fill="#B3D4FC"/><ellipse cx="35" cy="52" rx="18" ry="10" fill="#B3D4FC"/><ellipse cx="35" cy="32" rx="8" ry="8" fill="#fff"/><ellipse cx="35" cy="32" rx="5" ry="5" fill="#B3D4FC"/></svg>
+                        </div>
+                        <div class="review-card__body">
+                            <div class="review-card__header">
+                                <span class="review-card__name">Марат И.</span>
+                                <span class="review-card__company">Стартап "Q-Code"</span>
+                                <span class="review-card__stars">★★★★☆</span>
+                            </div>
+                            <p class="review-card__text">Обратились к Радику за разработкой чат-бота для Telegram. Бот отлично справляется с задачей поддержки пользователей, разгрузив нашу команду. Все было реализовано в срок, с учетом всех технических нюансов.</p>
+                            <span class="review-card__date">1 октября 2023</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="cta section-padding">
-            <div class="container cta__container">
-                <h2 class="cta__title">Готовы обсудить ваш проект?</h2>
-                <p class="cta__subtitle">Давайте создадим что-то особенное вместе. Первая консультация — бесплатно.</p>
-                <a href="https://wa.me/77081538703" target="_blank" class="btn btn--primary btn-large">Написать в WhatsApp</a>
             </div>
         </section>
     </main>
-
-    <footer class="footer">
-        <div class="container footer__container">
-            <div class="footer__contacts">
-                <a href="index.html" class="logo logo-text footer__logo">
-                    <span class="logo-text__ya">Ya</span><span class="logo-text__radik">Radik</span>
-                </a>
-                <p>Телефон/WhatsApp: <a href="https://wa.me/77081538703" target="_blank">+7 (708) 153-87-03</a></p>
-                <p>Email: <a href="mailto:contact@yaradik.dev">contact@yaradik.dev</a></p>
-            </div>
-            <nav class="footer__nav">
-                 <h4 class="footer__nav-title">Навигация</h4>
-                <ul class="nav__list nav__list--footer">
-                   <li class="nav__item"><a href="index.html#services" class="nav__link">Услуги</a></li>
-                    <li class="nav__item"><a href="index.html#portfolio" class="nav__link">Портфолио</a></li>
-                    <li class="nav__item"><a href="index.html#workflow" class="nav__link">Этапы работы</a></li>
-                    <li class="nav__item"><a href="reviews.html" class="nav__link">Отзывы</a></li>
-                    <li class="nav__item"><a href="portfolio.html" class="nav__link">Все работы</a></li>
-                </ul>
-            </nav>
-            <div class="footer__copyright">
-                <p>&copy; 2024 YaRadik. Все права защищены.</p>
-                <p>Разработка сайтов и чат-ботов.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/script.js"></script>
 </body>
 </html>

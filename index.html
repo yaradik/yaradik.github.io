@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YaRadik - Разработка сайтов и чат-ботов</title>
-    <meta name="description" content="Создаю эффективные digital-решения для вашего бизнеса: от лендингов и интернет-магазинов до автоматизации с помощью чат-ботов.">
+    <title>Радик Якупов - Веб-разработчик | Создание сайтов для бизнеса</title>
+    <meta name="description" content="Разработка сайтов под ключ от Радика Якупова. Лендинги, корпоративные сайты, сайты-каталоги. Помогаю малому и среднему бизнесу заявить о себе в интернете.">
     <meta name="yandex-verification" content="632d82ffcd318e91" />
     <meta name="google-site-verification" content="ig76MosJEfZy1bhk4enS1uzW7RSVj5lr8Z520YCyqc4" />
     
@@ -28,11 +28,12 @@
     <link rel="preload" href="js/script.js" as="script">
     <link rel="preload" href="assets/logo.svg" as="image">
     <link rel="preload" href="img/hero-bg.jpg" as="image">
+    <link rel="preload" href="img/hero-digital.jpg" as="image">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -86,12 +87,44 @@
 
     <main>
         <section class="hero">
+            <div class="hero__bg">
+                <div class="hero__gradient"></div>
+                <div class="hero__grid"></div>
+                <div class="hero__floating-elements">
+                    <div class="hero__element hero__element--1"></div>
+                    <div class="hero__element hero__element--2"></div>
+                    <div class="hero__element hero__element--3"></div>
+                </div>
+            </div>
             <div class="hero__container">
-                <h1 class="hero__title">Разработка сайтов и чат-ботов, которые приводят клиентов</h1>
-                <p class="hero__subtitle">Создаю эффективные digital-решения для вашего бизнеса: от лендингов и интернет-магазинов до автоматизации с помощью чат-ботов.</p>
-                <div class="hero__actions">
-                    <a href="https://wa.me/77081538703" target="_blank" class="btn btn--primary">Обсудить проект в WhatsApp</a>
-                    <a href="#portfolio" class="btn btn--secondary">Смотреть портфолио</a>
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        <span class="hero__title-line">Сайты и чат-боты</span>
+                        <span class="hero__title-line hero__title-line--accent">под ключ</span>
+                        <span class="hero__title-line">для вашего бизнеса</span>
+                    </h1>
+                    <p class="hero__subtitle">Создаю сайты, которые приносят клиентов. Работаю по всей Республике Казахстан.</p>
+                    <div class="hero__actions">
+                        <a href="https://wa.me/77081538703" target="_blank" class="btn btn--primary btn--glow">
+                            <svg width="22" height="22" viewBox="0 0 32 32" style="vertical-align:middle;margin-right:8px;"><circle fill="#25D366" cx="16" cy="16" r="16"/><path fill="#fff" d="M24.5 20.7c-.4-.2-2.3-1.1-2.6-1.2-.3-.1-.5-.2-.7.2-.2.4-.7 1.2-.9 1.4-.2.2-.3.3-.7.1-.4-.2-1.5-.5-2.8-1.6-1-0.9-1.7-2-1.9-2.3-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.2-.4.3-.6.1-.2.1-.4 0-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.6-.5-.8-.5-.2 0-.4 0-.6 0-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9 0 1.7 1.2 3.3 1.4 3.5.2.2 2.3 3.5 5.7 4.7.8.3 1.4.5 1.9.6.8.2 1.5.2 2.1.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.1-1.4-.1-.1-.3-.2-.7-.4z"/></svg>
+                            Написать в WhatsApp
+                        </a>
+                        <a href="#portfolio" class="btn btn--secondary btn--outline">Смотреть портфолио</a>
+                    </div>
+                </div>
+                <div class="hero__visual">
+                    <div class="hero__code-block">
+                        <div class="hero__code-header">
+                            <div class="hero__code-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="hero__code-content">
+                            <pre><code><span class="keyword">const</span> <span class="variable">website</span> = <span class="string">'modern'</span>;
+<span class="keyword">const</span> <span class="variable">result</span> = <span class="string">'clients'</span>;
+<span class="keyword">return</span> <span class="function">success</span>();</code></pre>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -100,26 +133,26 @@
             <div class="container">
                 <h2 class="section-title">Чем я могу быть полезен?</h2>
                 <div class="services__grid">
-                    <div class="service-card">
+                    <div class="service-card fade-in">
                         <div class="service-card__icon">
-                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop&q=60" alt="Разработка сайтов" class="service-card__image">
+                            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Веб-макет сайта" class="service-card__image">
                         </div>
-                        <h3 class="service-card__title">Разработка сайтов</h3>
-                        <p class="service-card__description">Создание современных и адаптивных сайтов: лендинги, корпоративные сайты, интернет-магазины. Гарантирую высокую скорость загрузки и SEO-оптимизацию.</p>
+                        <h3 class="service-card__title">Лендинг</h3>
+                        <p class="service-card__description">Одностраничный сайт для быстрого старта и сбора заявок. <b>от 49 000 ₸</b></p>
                     </div>
-                    <div class="service-card">
+                    <div class="service-card fade-in" style="animation-delay:0.15s;">
                         <div class="service-card__icon">
-                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&auto=format&fit=crop&q=60" alt="Дизайн" class="service-card__image">
+                            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Чат-бот для бизнеса" class="service-card__image">
                         </div>
-                        <h3 class="service-card__title">Дизайн</h3>
-                        <p class="service-card__description">Разработка уникального UI/UX дизайна, который подчеркнет ваш бренд и обеспечит удобство использования для ваших клиентов. От прототипа до готового макета.</p>
+                        <h3 class="service-card__title">Чат-бот</h3>
+                        <p class="service-card__description">Автоматизация общения с клиентами в WhatsApp/Telegram. <b>от 29 000 ₸</b></p>
                     </div>
-                    <div class="service-card">
+                    <div class="service-card fade-in" style="animation-delay:0.3s;">
                         <div class="service-card__icon">
-                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&auto=format&fit=crop&q=60" alt="Разработка чат-ботов" class="service-card__image">
+                            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" alt="UX-доска и прототипы" class="service-card__image">
                         </div>
-                        <h3 class="service-card__title">Разработка чат-ботов</h3>
-                        <p class="service-card__description">Автоматизация коммуникации с клиентами через Telegram, WhatsApp. Чат-боты для поддержки, продаж, сбора информации и других бизнес-задач.</p>
+                        <h3 class="service-card__title">Сайт</h3>
+                        <p class="service-card__description">Корпоративный сайт, интернет-магазин или каталог. <b>от 59 000 ₸</b></p>
                     </div>
                 </div>
             </div>
@@ -129,85 +162,112 @@
             <div class="container">
                 <h2 class="section-title">Мои работы</h2>
                 <div class="portfolio__grid">
-                    <!-- Корпоративные сайты -->
+                    <!-- Корпоративный сайт для медицинского центра -->
                     <div class="portfolio-card">
                         <div class="portfolio-card__image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&auto=format&fit=crop&q=60" alt="Превью проекта: Медицинский центр" class="portfolio-card__image" loading="lazy">
+                            <span class="portfolio-card__badge">Медицина</span>
+                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&auto=format&fit=crop&q=60" alt="Центр семейной медицины в Алматы — корпоративный сайт" class="portfolio-card__image" loading="lazy">
                             <div class="portfolio-card__overlay">
-                                <a href="portfolio-examples/corporate/medical-center/index.html" class="portfolio-card__link" target="_blank">Смотреть демо</a>
+                                <a href="portfolio-examples/corporate/medical-center/index.html" class="portfolio-card__link" target="_blank">
+                                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:8px;"><path d="M12 5c-7 0-9 7-9 7s2 7 9 7 9-7 9-7-2-7-9-7zm0 12c-5.05 0-7.29-4.18-7.93-5C4.71 10.18 6.95 6 12 6s7.29 4.18 7.93 5c-.64.82-2.88 5-7.93 5zm0-8a3 3 0 100 6 3 3 0 000-6zm0 5a2 2 0 110-4 2 2 0 010 4z" fill="#fff"/></svg>
+                                    Смотреть кейс
+                                </a>
                             </div>
                         </div>
                         <div class="portfolio-card__content">
-                            <h3 class="portfolio-card__title">Медицинский центр</h3>
-                            <p class="portfolio-card__description">Корпоративный сайт с онлайн-записью и информацией об услугах</p>
+                            <h3 class="portfolio-card__title">Центр семейной медицины в Алматы</h3>
+                            <p class="portfolio-card__description">Создан корпоративный сайт с онлайн-записью и адаптацией под мобильные. Задача — увеличить количество первичных приёмов и упростить запись для пациентов.</p>
+                            <div class="portfolio-card__result">+40% онлайн-заявок за 2 месяца</div>
                         </div>
                     </div>
-
+                    <!-- IT-компания -->
                     <div class="portfolio-card">
                         <div class="portfolio-card__image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&auto=format&fit=crop&q=60" alt="Превью проекта: IT-компания" class="portfolio-card__image" loading="lazy">
+                            <span class="portfolio-card__badge">IT</span>
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&auto=format&fit=crop&q=60" alt="IT-компания — корпоративный сайт и автоматизация" class="portfolio-card__image" loading="lazy">
                             <div class="portfolio-card__overlay">
-                                <a href="portfolio-examples/corporate/it-company/index.html" class="portfolio-card__link" target="_blank">Смотреть демо</a>
+                                <a href="portfolio-examples/corporate/it-company/index.html" class="portfolio-card__link" target="_blank">
+                                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:8px;"><path d="M12 5c-7 0-9 7-9 7s2 7 9 7 9-7 9-7-2-7-9-7zm0 12c-5.05 0-7.29-4.18-7.93-5C4.71 10.18 6.95 6 12 6s7.29 4.18 7.93 5c-.64.82-2.88 5-7.93 5zm0-8a3 3 0 100 6 3 3 0 000-6zm0 5a2 2 0 110-4 2 2 0 010 4z" fill="#fff"/></svg>
+                                    Смотреть кейс
+                                </a>
                             </div>
                         </div>
                         <div class="portfolio-card__content">
-                            <h3 class="portfolio-card__title">IT-компания</h3>
-                            <p class="portfolio-card__description">Современный корпоративный сайт с портфолио проектов</p>
+                            <h3 class="portfolio-card__title">IT-компания, Алматы</h3>
+                            <p class="portfolio-card__description">Современный корпоративный сайт с портфолио проектов и автоматизацией заявок. Решение — повысить доверие и увеличить обращения через сайт.</p>
+                            <div class="portfolio-card__result">Рост обращений в 2 раза</div>
                         </div>
                     </div>
-
-                    <!-- Сайты-визитки -->
+                    <!-- Сайт-визитка для юриста -->
                     <div class="portfolio-card">
                         <div class="portfolio-card__image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&auto=format&fit=crop&q=60" alt="Превью проекта: Сайт-визитка для юриста" class="portfolio-card__image" loading="lazy">
+                            <span class="portfolio-card__badge">Личный бренд</span>
+                            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&auto=format&fit=crop&q=60" alt="Сайт-визитка для юриста, Астана" class="portfolio-card__image" loading="lazy">
                             <div class="portfolio-card__overlay">
-                                <a href="portfolio-examples/business-card/lawyer/index.html" class="portfolio-card__link" target="_blank">Смотреть демо</a>
+                                <a href="portfolio-examples/business-card/lawyer/index.html" class="portfolio-card__link" target="_blank">
+                                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:8px;"><path d="M12 5c-7 0-9 7-9 7s2 7 9 7 9-7 9-7-2-7-9-7zm0 12c-5.05 0-7.29-4.18-7.93-5C4.71 10.18 6.95 6 12 6s7.29 4.18 7.93 5c-.64.82-2.88 5-7.93 5zm0-8a3 3 0 100 6 3 3 0 000-6zm0 5a2 2 0 110-4 2 2 0 010 4z" fill="#fff"/></svg>
+                                    Смотреть кейс
+                                </a>
                             </div>
                         </div>
                         <div class="portfolio-card__content">
-                            <h3 class="portfolio-card__title">Сайт-визитка для юриста</h3>
-                            <p class="portfolio-card__description">Корпоративный стиль, удобная навигация, форма обратной связи</p>
+                            <h3 class="portfolio-card__title">Сайт-визитка для юриста, Астана</h3>
+                            <p class="portfolio-card__description">Личный сайт для юридической фирмы. Внедрена форма обратной связи и корпоративный стиль. Решение — повысить доверие и увеличить поток клиентов.</p>
+                            <div class="portfolio-card__result">+30% заявок через сайт</div>
                         </div>
                     </div>
-
+                    <!-- Портфолио-фотограф, Алматы -->
                     <div class="portfolio-card">
                         <div class="portfolio-card__image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=1200&auto=format&fit=crop&q=60" alt="Превью проекта: Сайт-визитка для фотографа" class="portfolio-card__image" loading="lazy">
+                            <span class="portfolio-card__badge">Личный бренд</span>
+                            <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=1200&auto=format&fit=crop&q=60" alt="Портфолио-фотограф, Алматы" class="portfolio-card__image" loading="lazy">
                             <div class="portfolio-card__overlay">
-                                <a href="portfolio-examples/business-card/photographer/index.html" class="portfolio-card__link" target="_blank">Смотреть демо</a>
+                                <a href="portfolio-examples/business-card/photographer/index.html" class="portfolio-card__link" target="_blank">
+                                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:8px;"><path d="M12 5c-7 0-9 7-9 7s2 7 9 7 9-7 9-7-2-7-9-7zm0 12c-5.05 0-7.29-4.18-7.93-5C4.71 10.18 6.95 6 12 6s7.29 4.18 7.93 5c-.64.82-2.88 5-7.93 5zm0-8a3 3 0 100 6 3 3 0 000-6zm0 5a2 2 0 110-4 2 2 0 010 4z" fill="#fff"/></svg>
+                                    Смотреть кейс
+                                </a>
                             </div>
                         </div>
                         <div class="portfolio-card__content">
-                            <h3 class="portfolio-card__title">Сайт-визитка для фотографа</h3>
-                            <p class="portfolio-card__description">Портфолио работ, галерея, форма заказа фотосессии</p>
+                            <h3 class="portfolio-card__title">Портфолио-фотограф, Алматы</h3>
+                            <p class="portfolio-card__description">Портфолио для фотографа с галереей и онлайн-заказом. Решение — упростить коммуникацию и увеличить поток новых клиентов.</p>
+                            <div class="portfolio-card__result">+25% новых клиентов</div>
                         </div>
                     </div>
-
-                    <!-- Интернет-магазины -->
+                    <!-- Интернет-магазин игрушек -->
                     <div class="portfolio-card">
                         <div class="portfolio-card__image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=1200&auto=format&fit=crop&q=60" alt="Превью проекта: Интернет-магазин игрушек" class="portfolio-card__image" loading="lazy">
+                            <span class="portfolio-card__badge">E-commerce</span>
+                            <img src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=1200&auto=format&fit=crop&q=60" alt="Интернет-магазин игрушек, Казахстан" class="portfolio-card__image" loading="lazy">
                             <div class="portfolio-card__overlay">
-                                <a href="portfolio-examples/e-commerce/toy-store/index.html" class="portfolio-card__link" target="_blank">Смотреть демо</a>
+                                <a href="portfolio-examples/e-commerce/toy-store/index.html" class="portfolio-card__link" target="_blank">
+                                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:8px;"><path d="M12 5c-7 0-9 7-9 7s2 7 9 7 9-7 9-7-2-7-9-7zm0 12c-5.05 0-7.29-4.18-7.93-5C4.71 10.18 6.95 6 12 6s7.29 4.18 7.93 5c-.64.82-2.88 5-7.93 5zm0-8a3 3 0 100 6 3 3 0 000-6zm0 5a2 2 0 110-4 2 2 0 010 4z" fill="#fff"/></svg>
+                                    Смотреть кейс
+                                </a>
                             </div>
                         </div>
                         <div class="portfolio-card__content">
-                            <h3 class="portfolio-card__title">Интернет-магазин игрушек</h3>
-                            <p class="portfolio-card__description">Полноценный интернет-магазин с каталогом и корзиной</p>
+                            <h3 class="portfolio-card__title">Интернет-магазин игрушек, Казахстан</h3>
+                            <p class="portfolio-card__description">Полноценный интернет-магазин с каталогом и корзиной. Задача — увеличить продажи и сделать покупку максимально удобной для родителей.</p>
+                            <div class="portfolio-card__result">Продажи выросли в 2 раза за 3 месяца</div>
                         </div>
                     </div>
-
-                    <!-- Лендинги -->
+                    <!-- Лендинг для салона красоты -->
                     <div class="portfolio-card">
                         <div class="portfolio-card__image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200&auto=format&fit=crop&q=60" alt="Превью проекта: Landing Page для салона красоты" class="portfolio-card__image" loading="lazy">
+                            <span class="portfolio-card__badge">Красота</span>
+                            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200&auto=format&fit=crop&q=60" alt="Лендинг для салона красоты, Шымкент" class="portfolio-card__image" loading="lazy">
                             <div class="portfolio-card__overlay">
-                                <a href="portfolio-examples/landing-page/beauty-salon/index.html" class="portfolio-card__link" target="_blank">Смотреть демо</a>
+                                <a href="portfolio-examples/landing-page/beauty-salon/index.html" class="portfolio-card__link" target="_blank">
+                                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:8px;"><path d="M12 5c-7 0-9 7-9 7s2 7 9 7 9-7 9-7-2-7-9-7zm0 12c-5.05 0-7.29-4.18-7.93-5C4.71 10.18 6.95 6 12 6s7.29 4.18 7.93 5c-.64.82-2.88 5-7.93 5zm0-8a3 3 0 100 6 3 3 0 000-6zm0 5a2 2 0 110-4 2 2 0 010 4z" fill="#fff"/></svg>
+                                    Смотреть кейс
+                                </a>
                             </div>
                         </div>
                         <div class="portfolio-card__content">
-                            <h3 class="portfolio-card__title">Landing Page для салона красоты</h3>
-                            <p class="portfolio-card__description">Современный дизайн, адаптивная верстка, интеграция с CRM</p>
+                            <h3 class="portfolio-card__title">Лендинг для салона красоты, Шымкент</h3>
+                            <p class="portfolio-card__description">Лендинг с интеграцией CRM и онлайн-записью. Решение — увеличить поток клиентов и автоматизировать работу администраторов.</p>
+                            <div class="portfolio-card__result">+40% записей через сайт</div>
                         </div>
                     </div>
                 </div>
@@ -250,32 +310,65 @@
             </div>
         </section>
 
-        <section id="reviews-preview" class="section-padding--light">
+        <section id="reviews" class="reviews section-padding--light">
             <div class="container">
-                <h2 class="section-title">Что говорят клиенты</h2>
-                <div class="reviews-preview__grid">
+                <h2 class="section-title">Что говорят мои клиенты</h2>
+                <div class="reviews__grid">
                     <div class="review-card">
-                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&auto=format&fit=crop&q=60" alt="Фото клиента: Анна М." class="review-card__photo">
+                        <div class="review-card__author">
+                            <svg class="review-card__photo" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="35" cy="35" r="35" fill="#E2E8F0"/>
+                                <ellipse cx="35" cy="32" rx="13" ry="13" fill="#F9D7E2"/>
+                                <ellipse cx="35" cy="52" rx="18" ry="10" fill="#F9D7E2"/>
+                                <ellipse cx="35" cy="32" rx="8" ry="8" fill="#fff"/>
+                                <ellipse cx="35" cy="32" rx="5" ry="5" fill="#F9D7E2"/>
+                            </svg>
                         <h3 class="review-card__name">Анна М.</h3>
                         <p class="review-card__company">Салон красоты "Шарм"</p>
-                        <p class="review-card__text">Радик разработал для нас потрясающий лендинг! Клиенты сразу отмечают удобство и стильный дизайн. Количество записей увеличилось на 40% после запуска сайта.</p>
+                        </div>
+                        <div class="review-card__body">
+                            <p class="review-card__text">Радик разработал для нас потрясающий лендинг! Клиенты сразу отмечают удобство и стильный дизайн. Количество записей увеличилось на 40% после запуска сайта, что превзошло все наши ожидания. Очень рекомендую!</p>
+                            <p class="review-card__date">21 мая 2024</p>
+                        </div>
                     </div>
 
                     <div class="review-card">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=60" alt="Фото клиента: Иван П." class="review-card__photo">
+                        <div class="review-card__author">
+                            <svg class="review-card__photo" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="35" cy="35" r="35" fill="#E2E8F0"/>
+                                <ellipse cx="35" cy="32" rx="13" ry="13" fill="#B3D4FC"/>
+                                <ellipse cx="35" cy="52" rx="18" ry="10" fill="#B3D4FC"/>
+                                <ellipse cx="35" cy="32" rx="8" ry="8" fill="#fff"/>
+                                <ellipse cx="35" cy="32" rx="5" ry="5" fill="#B3D4FC"/>
+                            </svg>
                         <h3 class="review-card__name">Иван П.</h3>
                         <p class="review-card__company">Юридическая фирма "Правовед"</p>
-                        <p class="review-card__text">Заказывали сайт-визитку для нашей юридической фирмы. Все сделано профессионально и в срок. Радик учел все наши пожелания и предложил отличные решения.</p>
+                        </div>
+                        <div class="review-card__body">
+                            <p class="review-card__text">Заказывали сайт-визитку. Все сделано профессионально и в срок. Радик учел все пожелания и предложил отличные решения по структуре. Теперь у нас солидный и современный сайт, который вызывает доверие.</p>
+                            <p class="review-card__date">18 апреля 2024</p>
+                        </div>
                     </div>
 
                     <div class="review-card">
-                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&auto=format&fit=crop&q=60" alt="Фото клиента: Елена К." class="review-card__photo">
+                        <div class="review-card__author">
+                             <svg class="review-card__photo" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="35" cy="35" r="35" fill="#E2E8F0"/>
+                                <ellipse cx="35" cy="32" rx="13" ry="13" fill="#F9D7E2"/>
+                                <ellipse cx="35" cy="52" rx="18" ry="10" fill="#F9D7E2"/>
+                                <ellipse cx="35" cy="32" rx="8" ry="8" fill="#fff"/>
+                                <ellipse cx="35" cy="32" rx="5" ry="5" fill="#F9D7E2"/>
+                            </svg>
                         <h3 class="review-card__name">Елена К.</h3>
                         <p class="review-card__company">Магазин игрушек "Радость"</p>
-                        <p class="review-card__text">Благодаря Радику у нас появился полноценный интернет-магазин с удобной системой оплаты и доставки. Продажи выросли в 2 раза!</p>
+                        </div>
+                        <div class="review-card__body">
+                            <p class="review-card__text">Благодаря Радику у нас появился полноценный интернет-магазин. Особенно порадовала простая административная панель. Продажи выросли в 2 раза за первые 3 месяца, это просто фантастика!</p>
+                            <p class="review-card__date">10 марта 2024</p>
+                        </div>
                     </div>
                 </div>
-                <div class="reviews-preview__actions">
+                <div class="reviews__actions">
                     <a href="reviews.html" class="btn btn--secondary">Читать все отзывы</a>
                 </div>
             </div>
@@ -283,8 +376,8 @@
 
         <section class="cta section-padding">
             <div class="container cta__container">
-                <h2 class="cta__title">Готовы вывести ваш бизнес на новый уровень?</h2>
-                <p class="cta__subtitle">Давайте обсудим вашу задачу. Первая консультация — бесплатно.</p>
+                <h2 class="cta__title">Хочешь современный сайт с результатом?</h2>
+                <p class="cta__subtitle">Обсудим твой проект бесплатно — напиши мне в WhatsApp</p>
                 <a href="https://wa.me/77081538703" target="_blank" class="btn btn--primary btn-large">Написать в WhatsApp</a>
             </div>
         </section>
@@ -297,7 +390,7 @@
                     <span class="logo-text__ya">Ya</span><span class="logo-text__radik">Radik</span>
                 </a>
                 <p>Телефон/WhatsApp: <a href="https://wa.me/77081538703" target="_blank">+7 (708) 153-87-03</a></p>
-                <p>Email: <a href="mailto:contact@yaradik.dev">contact@yaradik.dev</a> (пример)</p>
+                <p>Email: <a href="mailto:contact@yaradik.dev">radist2017@gmail.com</a></p>
             </div>
             <nav class="footer__nav">
                 <h4 class="footer__nav-title">Навигация</h4>
@@ -316,6 +409,11 @@
         </div>
     </footer>
 
+    <a href="https://wa.me/77081538703" target="_blank" class="whatsapp-float" aria-label="Написать в WhatsApp">
+        <svg width="32" height="32" viewBox="0 0 32 32"><circle fill="#25D366" cx="16" cy="16" r="16"/><path fill="#fff" d="M24.5 20.7c-.4-.2-2.3-1.1-2.6-1.2-.3-.1-.5-.2-.7.2-.2.4-.7 1.2-.9 1.4-.2.2-.3.3-.7.1-.4-.2-1.5-.5-2.8-1.6-1-0.9-1.7-2-1.9-2.3-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.2-.4.3-.6.1-.2.1-.4 0-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.6-.5-.8-.5-.2 0-.4 0-.6 0-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9 0 1.7 1.2 3.3 1.4 3.5.2.2 2.3 3.5 5.7 4.7.8.3 1.4.5 1.9.6.8.2 1.5.2 2.1.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.1-1.4-.1-.1-.3-.2-.7-.4z"/></svg>
+    </a>
+
+    <script src="js/typed.umd.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

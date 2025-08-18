@@ -6,9 +6,8 @@
     <title>Медицинский Центр "Здоровье" - Современная медицина</title>
     <meta name="description" content="Современный медицинский центр с опытными специалистами. Диагностика, лечение и профилактика заболеваний. Запись на прием онлайн.">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="../../assets/logo.svg" type="image/svg+xml">
-    <!-- Добавляем Font Awesome для иконок -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -31,11 +30,29 @@
     </header>
 
     <section class="hero-medical demo-section">
-        <div class="container">
+        <!-- Крестики-дождь -->
+        <span class="cross-rain"></span>
+        <span class="cross-rain"></span>
+        <span class="cross-rain"></span>
+        <span class="cross-rain"></span>
+        <span class="cross-rain"></span>
+        <span class="cross-rain"></span>
+        <span class="cross-rain"></span>
+        <span class="cross-rain"></span>
+        <span class="cross-rain"></span>
+        <span class="cross-rain"></span>
+        <span class="cross-rain"></span>
+        <span class="cross-rain"></span>
+        <span class="cross-rain"></span>
+        <span class="cross-rain"></span>
+        <span class="cross-rain"></span>
+        <!-- /Крестики-дождь -->
             <div class="hero__content">
+                <div class="hero__left">
                 <div class="hero__text">
                     <h2>Современная медицина для вашего здоровья</h2>
-                    <p>Опытные врачи, современное оборудование и индивидуальный подход к каждому пациенту.</p>
+                        <p>Опытные врачи, современное оборудование и индивидуальный подход к каждому пациенту. Мы заботимся о вашем здоровье с использованием передовых технологий.</p>
+                    </div>
                     <div class="hero__features">
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
@@ -50,13 +67,21 @@
                             <span>Удобное расположение</span>
                         </div>
                     </div>
+                </div>
+                <div class="hero__right">
+                    <div class="hero__image">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&auto=format&fit=crop&q=80" alt="Современный медицинский центр">
+                    </div>
+                    <div class="hero__buttons">
                     <a href="#contact" class="btn-medical">
                         <i class="fas fa-calendar-alt"></i>
                         Записаться на прием
                     </a>
+                        <a href="#services" class="btn-medical btn-medical--outline">
+                            <i class="fas fa-info-circle"></i>
+                            Узнать больше
+                    </a>
                 </div>
-                <div class="hero__image">
-                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&auto=format&fit=crop&q=80" alt="Современный медицинский центр">
                 </div>
             </div>
         </div>
@@ -65,7 +90,7 @@
     <section id="services" class="demo-section">
         <div class="container">
             <h2>Наши услуги</h2>
-            <p class="section-description">Мы предлагаем широкий спектр медицинских услуг для поддержания вашего здоровья</p>
+            <p class="section-description">Мы предлагаем широкий спектр медицинских услуг для поддержания вашего здоровья с использованием современного оборудования</p>
             <div class="services__grid">
                 <div class="service-card">
                     <div class="service-card__icon">
@@ -73,16 +98,16 @@
                     </div>
                     <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&auto=format&fit=crop&q=80" alt="Диагностика">
                     <h3>Диагностика</h3>
-                    <p>Современные методы диагностики с использованием передового оборудования</p>
+                    <p>Современные методы диагностики с использованием передового оборудования для точной постановки диагноза</p>
                     <a href="#contact" class="service-card__link">Подробнее</a>
                 </div>
                 <div class="service-card">
                     <div class="service-card__icon">
                         <i class="fas fa-notes-medical"></i>
                     </div>
-                    <img src="https://images.unsplash.com/photo-1581594693704-7334a7fe7075?w=800&auto=format&fit=crop&q=80" alt="Лечение">
+                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&auto=format&fit=crop&q=80" alt="Лечение">
                     <h3>Лечение</h3>
-                    <p>Эффективные методы лечения с применением современных технологий</p>
+                    <p>Эффективные методы лечения с применением современных технологий и индивидуальным подходом</p>
                     <a href="#contact" class="service-card__link">Подробнее</a>
                 </div>
                 <div class="service-card">
@@ -91,7 +116,7 @@
                     </div>
                     <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format&fit=crop&q=80" alt="Профилактика">
                     <h3>Профилактика</h3>
-                    <p>Программы профилактики и поддержания здоровья</p>
+                    <p>Программы профилактики и поддержания здоровья для предотвращения заболеваний</p>
                     <a href="#contact" class="service-card__link">Подробнее</a>
                 </div>
             </div>
@@ -101,7 +126,7 @@
     <section id="doctors" class="demo-section" style="background-color: #F0F4F8;">
         <div class="container">
             <h2>Наши специалисты</h2>
-            <p class="section-description">Опытные врачи с многолетним стажем работы</p>
+            <p class="section-description">Опытные врачи с многолетним стажем работы и высокой квалификацией</p>
             <div class="doctors__grid">
                 <div class="doctor-card">
                     <div class="doctor-card__image">
@@ -116,7 +141,7 @@
                         <h3>Иванов Иван Иванович</h3>
                         <p class="doctor-card__position">Главный врач</p>
                         <p class="doctor-card__experience">Стаж работы: 15 лет</p>
-                        <p class="doctor-card__description">Специалист высшей категории, кандидат медицинских наук</p>
+                        <p class="doctor-card__description">Специалист высшей категории, кандидат медицинских наук. Эксперт в области внутренних болезней.</p>
                         <a href="#contact" class="btn-medical btn-medical--small">Записаться</a>
                     </div>
                 </div>
@@ -133,7 +158,7 @@
                         <h3>Петрова Анна Сергеевна</h3>
                         <p class="doctor-card__position">Кардиолог</p>
                         <p class="doctor-card__experience">Стаж работы: 10 лет</p>
-                        <p class="doctor-card__description">Специалист по кардиологии, автор научных работ</p>
+                        <p class="doctor-card__description">Специалист по кардиологии, автор научных работ. Эксперт в диагностике и лечении сердечно-сосудистых заболеваний.</p>
                         <a href="#contact" class="btn-medical btn-medical--small">Записаться</a>
                     </div>
                 </div>
@@ -150,7 +175,7 @@
                         <h3>Сидоров Петр Николаевич</h3>
                         <p class="doctor-card__position">Невролог</p>
                         <p class="doctor-card__experience">Стаж работы: 12 лет</p>
-                        <p class="doctor-card__description">Специалист по неврологии, практикующий врач</p>
+                        <p class="doctor-card__description">Специалист по неврологии, практикующий врач. Эксперт в лечении заболеваний нервной системы.</p>
                         <a href="#contact" class="btn-medical btn-medical--small">Записаться</a>
                     </div>
                 </div>
@@ -161,7 +186,7 @@
     <section id="prices" class="demo-section">
         <div class="container">
             <h2>Цены на услуги</h2>
-            <p class="section-description">Прозрачное ценообразование и доступные цены</p>
+            <p class="section-description">Прозрачное ценообразование и доступные цены для всех категорий пациентов</p>
             <div class="prices__grid">
                 <div class="price-card">
                     <div class="price-card__header">
@@ -172,6 +197,7 @@
                         <li><i class="fas fa-check"></i> Осмотр врача</li>
                         <li><i class="fas fa-check"></i> Консультация</li>
                         <li><i class="fas fa-check"></i> Назначение лечения</li>
+                        <li><i class="fas fa-check"></i> Рекомендации</li>
                     </ul>
                     <a href="#contact" class="btn-medical btn-medical--outline">Записаться</a>
                 </div>
@@ -181,9 +207,10 @@
                         <p class="price">от 3 000 ₽</p>
                     </div>
                     <ul class="price-card__features">
-                        <li><i class="fas fa-check"></i> Анализы</li>
-                        <li><i class="fas fa-check"></i> УЗИ</li>
+                        <li><i class="fas fa-check"></i> Анализы крови</li>
+                        <li><i class="fas fa-check"></i> УЗИ диагностика</li>
                         <li><i class="fas fa-check"></i> ЭКГ</li>
+                        <li><i class="fas fa-check"></i> Рентген</li>
                     </ul>
                     <a href="#contact" class="btn-medical">Записаться</a>
                 </div>
@@ -193,9 +220,10 @@
                         <p class="price">от 5 000 ₽</p>
                     </div>
                     <ul class="price-card__features">
-                        <li><i class="fas fa-check"></i> Чек-ап</li>
+                        <li><i class="fas fa-check"></i> Чек-ап организма</li>
                         <li><i class="fas fa-check"></i> Вакцинация</li>
                         <li><i class="fas fa-check"></i> Консультации</li>
+                        <li><i class="fas fa-check"></i> План лечения</li>
                     </ul>
                     <a href="#contact" class="btn-medical btn-medical--outline">Записаться</a>
                 </div>
@@ -210,7 +238,10 @@
             <div class="reviews__grid">
                 <div class="review-card">
                     <div class="review-card__header">
-                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80" alt="Анна К.">
+                        <svg class="avatar" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="35" r="20" fill="#e5e7eb"/>
+                            <circle cx="50" cy="100" r="40" fill="#e5e7eb"/>
+                        </svg>
                         <div>
                             <h4>Анна К.</h4>
                             <div class="review-stars">
@@ -227,7 +258,10 @@
                 </div>
                 <div class="review-card">
                     <div class="review-card__header">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80" alt="Сергей М.">
+                        <svg class="avatar" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="35" r="20" fill="#e5e7eb"/>
+                            <circle cx="50" cy="100" r="40" fill="#e5e7eb"/>
+                        </svg>
                         <div>
                             <h4>Сергей М.</h4>
                             <div class="review-stars">
@@ -244,7 +278,10 @@
                 </div>
                 <div class="review-card">
                     <div class="review-card__header">
-                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&auto=format&fit=crop&q=80" alt="Елена В.">
+                        <svg class="avatar" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="35" r="20" fill="#e5e7eb"/>
+                            <circle cx="50" cy="100" r="40" fill="#e5e7eb"/>
+                        </svg>
                         <div>
                             <h4>Елена В.</h4>
                             <div class="review-stars">
@@ -252,57 +289,12 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
+                                <i class="fas fa-star"></i>
                             </div>
                         </div>
                     </div>
-                    <p class="review-text">Удобное расположение, приветливый персонал и высокий уровень обслуживания. Рекомендую всем, кто ценит качество медицинских услуг.</p>
-                    <span class="review-date">5 марта 2024</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="news" class="demo-section" style="background-color: #F0F4F8;">
-        <div class="container">
-            <h2>Новости и акции</h2>
-            <p class="section-description">Будьте в курсе последних новостей и специальных предложений</p>
-            <div class="news__grid">
-                <div class="news-card">
-                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&auto=format&fit=crop&q=80" alt="Новое оборудование">
-                    <div class="news-card__content">
-                        <div class="news-card__meta">
-                            <span class="news-card__category">Новости</span>
-                            <span class="news-card__date">20 марта 2024</span>
-                        </div>
-                        <h3>Новое диагностическое оборудование</h3>
-                        <p>Мы рады сообщить о поступлении нового современного диагностического оборудования, которое позволит проводить более точные исследования.</p>
-                        <a href="#" class="news-card__link">Подробнее <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="news-card">
-                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format&fit=crop&q=80" alt="Акция">
-                    <div class="news-card__content">
-                        <div class="news-card__meta">
-                            <span class="news-card__category">Акция</span>
-                            <span class="news-card__date">15 марта 2024</span>
-                        </div>
-                        <h3>Скидка 20% на комплексное обследование</h3>
-                        <p>В течение месяца действует специальное предложение на комплексное обследование организма. Успейте записаться!</p>
-                        <a href="#" class="news-card__link">Подробнее <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="news-card">
-                    <img src="https://images.unsplash.com/photo-1581594693704-7334a7fe7075?w=800&auto=format&fit=crop&q=80" alt="Семинар">
-                    <div class="news-card__content">
-                        <div class="news-card__meta">
-                            <span class="news-card__category">События</span>
-                            <span class="news-card__date">10 марта 2024</span>
-                        </div>
-                        <h3>Бесплатный семинар по здоровому образу жизни</h3>
-                        <p>Приглашаем всех желающих на бесплатный семинар, где наши специалисты поделятся секретами здорового образа жизни.</p>
-                        <a href="#" class="news-card__link">Подробнее <i class="fas fa-arrow-right"></i></a>
-                    </div>
+                    <p class="review-text">Проходила полное обследование в центре. Все очень понравилось: современное оборудование, внимательные врачи, удобная запись на прием.</p>
+                    <span class="review-date">8 марта 2024</span>
                 </div>
             </div>
         </div>
@@ -310,20 +302,22 @@
 
     <section id="contact" class="demo-section" style="background-color: #F0F4F8;">
         <div class="container">
+            <h2>Свяжитесь с нами</h2>
+            <p class="section-description">Запишитесь на прием или получите консультацию</p>
             <div class="contact__grid">
                 <div class="contact__info">
-                    <h2>Записаться на прием</h2>
-                    <p>Выберите удобное время и оставьте заявку. Мы свяжемся с вами для подтверждения записи.</p>
+                    <h3>Контактная информация</h3>
+                    <p>Мы всегда готовы помочь вам и ответить на все ваши вопросы</p>
                     <div class="contact__details">
                         <div class="contact__detail">
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
                                 <h4>Адрес</h4>
-                                <p>г. Москва, ул. Медицинская, 1</p>
+                                <p>ул. Медицинская, 123<br>Москва, 123456</p>
                             </div>
                         </div>
                         <div class="contact__detail">
-                            <i class="fas fa-phone-alt"></i>
+                            <i class="fas fa-phone"></i>
                             <div>
                                 <h4>Телефон</h4>
                                 <p>+7 (000) 000-00-06</p>
@@ -333,62 +327,45 @@
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <h4>Email</h4>
-                                <p>info@health.example</p>
+                                <p>info@zdorovie.ru</p>
                             </div>
                         </div>
                         <div class="contact__detail">
                             <i class="fas fa-clock"></i>
                             <div>
                                 <h4>Режим работы</h4>
-                                <p>Пн-Пт: 8:00 - 20:00<br>Сб-Вс: 9:00 - 18:00</p>
+                                <p>Пн-Пт: 8:00-20:00<br>Сб-Вс: 9:00-18:00</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="contact__form">
+                    <h3>Записаться на прием</h3>
                     <form>
                         <div class="form-group">
-                            <label for="name">Ваше имя</label>
-                            <input type="text" id="name" placeholder="Введите ваше имя" required>
+                            <label for="name">Имя</label>
+                            <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
-                            <label for="phone">Ваш телефон</label>
-                            <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" required>
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="Введите ваш email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="doctor">Выберите специалиста</label>
-                            <select id="doctor" required>
-                                <option value="">Выберите врача</option>
-                                <option value="ivanov">Иванов И.И. - Главный врач</option>
-                                <option value="petrova">Петрова А.С. - Кардиолог</option>
-                                <option value="sidorov">Сидоров П.Н. - Невролог</option>
+                            <label for="service">Услуга</label>
+                            <select id="service" name="service" required>
+                                <option value="">Выберите услугу</option>
+                                <option value="diagnostic">Диагностика</option>
+                                <option value="treatment">Лечение</option>
+                                <option value="prevention">Профилактика</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="date">Выберите дату приема</label>
-                            <input type="date" id="date" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="time">Выберите время приема</label>
-                            <select id="time" required>
-                                <option value="">Выберите время</option>
-                                <option value="09:00">09:00</option>
-                                <option value="10:00">10:00</option>
-                                <option value="11:00">11:00</option>
-                                <option value="12:00">12:00</option>
-                                <option value="14:00">14:00</option>
-                                <option value="15:00">15:00</option>
-                                <option value="16:00">16:00</option>
-                                <option value="17:00">17:00</option>
-                            </select>
+                            <label for="date">Желаемая дата</label>
+                            <input type="date" id="date" name="date" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Сообщение</label>
-                            <textarea id="message" placeholder="Опишите причину обращения" rows="4"></textarea>
+                            <textarea id="message" name="message" rows="4"></textarea>
                         </div>
                         <button type="submit" class="btn-medical">
                             <i class="fas fa-paper-plane"></i>
@@ -400,35 +377,42 @@
         </div>
     </section>
 
-    <footer class="demo-footer medical-footer">
+    <footer class="demo-footer">
         <div class="container">
             <div class="footer__content">
                 <div class="footer__info">
                     <h3>Медицинский Центр "Здоровье"</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> ул. Медицинская, 123, Москва</p>
                     <p><i class="fas fa-phone"></i> +7 (000) 000-00-06</p>
-                    <p><i class="fas fa-envelope"></i> info@health.example</p>
-                    <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Медицинская, 1</p>
+                    <p><i class="fas fa-envelope"></i> info@zdorovie.ru</p>
                 </div>
                 <div class="footer__nav">
-                    <h4>Навигация</h4>
-                    <a href="#services"><i class="fas fa-stethoscope"></i> Услуги</a>
-                    <a href="#doctors"><i class="fas fa-user-md"></i> Врачи</a>
-                    <a href="#prices"><i class="fas fa-tag"></i> Цены</a>
-                    <a href="#contact"><i class="fas fa-phone"></i> Контакты</a>
+                    <h4>Услуги</h4>
+                    <a href="#services">Диагностика</a>
+                    <a href="#services">Лечение</a>
+                    <a href="#services">Профилактика</a>
+                    <a href="#prices">Цены</a>
+                </div>
+                <div class="footer__nav">
+                    <h4>Информация</h4>
+                    <a href="#doctors">Врачи</a>
+                    <a href="#reviews">Отзывы</a>
+                    <a href="#contact">Контакты</a>
+                    <a href="#contact">Запись</a>
                 </div>
                 <div class="footer__social">
                     <h4>Мы в соцсетях</h4>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer__bottom">
                 <p class="footer__copyright">&copy; 2024 Медицинский Центр "Здоровье". Все права защищены.</p>
-                <p><a href="../../index.html">Вернуться на главный сайт YaRadik</a></p>
+                <a href="#">Политика конфиденциальности</a>
             </div>
         </div>
     </footer>

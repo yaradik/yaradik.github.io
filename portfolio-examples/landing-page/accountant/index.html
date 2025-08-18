@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Бухгалтерские Услуги "Профит" - Landing Page</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Include main site's global fonts or specific ones for this demo -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="../../assets/logo.svg" type="image/svg+xml">
@@ -38,17 +39,20 @@
             <p>Комплексное бухгалтерское обслуживание, подготовка и сдача отчетности, восстановление учета, кадровый учет и многое другое.</p>
             <div class="services__grid">
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=600&q=80" alt="Бухгалтерское обслуживание">
+                    <div class="service-card__icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                    <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&w=600&h=400&fit=crop" alt="Бухгалтерское обслуживание">
                     <h3>Бухгалтерское обслуживание</h3>
                     <p>Полное ведение бухгалтерии вашей компании</p>
                 </div>
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=600&q=80" alt="Налоговое консультирование">
+                    <div class="service-card__icon"><i class="fas fa-calculator"></i></div>
+                    <img src="https://images.pexels.com/photos/210990/pexels-photo-210990.jpeg?auto=compress&w=600&h=400&fit=crop" alt="Налоговое консультирование">
                     <h3>Налоговое консультирование</h3>
                     <p>Оптимизация налогообложения и налоговое планирование</p>
                 </div>
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=600&q=80" alt="Кадровый учет">
+                    <div class="service-card__icon"><i class="fas fa-users"></i></div>
+                    <img src="https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&w=600&h=400&fit=crop" alt="Кадровый учет">
                     <h3>Кадровый учет</h3>
                     <p>Ведение кадрового делопроизводства и расчет зарплаты</p>
                 </div>
@@ -62,17 +66,20 @@
             <p>Опыт, профессионализм, индивидуальный подход, конфиденциальность. Мы помогаем вашему бизнесу расти.</p>
             <div class="advantages__grid">
                 <div class="advantage-card">
-                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=600&q=80" alt="Опыт">
+                    <div class="advantage-card__icon"><i class="fas fa-award"></i></div>
+                    <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&w=600&h=400&fit=crop" alt="Опыт">
                     <h3>10 лет опыта</h3>
                     <p>Работаем с 2014 года</p>
                 </div>
                 <div class="advantage-card">
-                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=600&q=80" alt="Профессионализм">
+                    <div class="advantage-card__icon"><i class="fas fa-user-tie"></i></div>
+                    <img src="https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&w=600&h=400&fit=crop" alt="Профессионализм">
                     <h3>Профессионализм</h3>
                     <p>Команда сертифицированных специалистов</p>
                 </div>
                 <div class="advantage-card">
-                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=600&q=80" alt="Подход">
+                    <div class="advantage-card__icon"><i class="fas fa-handshake"></i></div>
+                    <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&w=600&h=400&fit=crop" alt="Подход">
                     <h3>Индивидуальный подход</h3>
                     <p>Учитываем особенности вашего бизнеса</p>
                 </div>
@@ -83,17 +90,48 @@
     <section id="contact" class="demo-section">
         <div class="container">
             <h2>Свяжитесь с нами</h2>
-            <p>Телефон: +7 (000) 000-00-01</p>
-            <p>Email: profit@example.com</p>
-            <div class="contact__image">
-                <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80" alt="Офис Профит">
+            <form class="modern-form" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Ваш email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message" placeholder="Ваш вопрос или комментарий..." rows="3" required></textarea>
             </div>
+                <button type="submit" class="btn-accountant btn-accountant-primary">
+                    <i class="fas fa-paper-plane"></i> Отправить
+                </button>
+                <div class="form-success" style="display:none; color:green; margin-top:1em;">Спасибо! Мы свяжемся с вами в ближайшее время.</div>
+            </form>
+            <p style="margin-top:2em;">Телефон: +7 (000) 000-00-01<br>Email: profit@example.com</p>
+            <!-- div.contact__image удалён, чтобы не было пустоты -->
         </div>
     </section>
 
     <footer class="demo-footer accountant-footer">
-        <p>&copy; 2024 Бухгалтерские Услуги "Профит"</p>
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <h3><i class="fas fa-calculator"></i> Бухгалтерские Услуги "Профит"</h3>
+                    <p>Ваш надежный партнер в финансах и учете</p>
+                </div>
+                <div class="footer__nav">
+                    <a href="#services">Услуги</a>
+                    <a href="#about">О нас</a>
+                    <a href="#contact">Контакты</a>
+                </div>
+            </div>
+            <p style="margin-top:1em;">&copy; 2024 Бухгалтерские Услуги "Профит"</p>
         <p><a href="../../index.html" style="color:#BEE3F8; text-decoration:underline;">Вернуться на главный сайт YaRadik</a></p>
+        </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

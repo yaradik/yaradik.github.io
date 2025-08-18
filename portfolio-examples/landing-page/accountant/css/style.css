@@ -124,6 +124,100 @@ h2 { font-size: 1.8rem; text-align: center; margin-bottom: 1.5em; }
     color: #4B5563;
 }
 
+.service-card__icon, .advantage-card__icon {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #3182CE;
+    margin-top: 1.2rem;
+}
+
+/* Стили для формы */
+.modern-form {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(44,82,130,0.08);
+    padding: 2em 2em 1em 2em;
+    max-width: 500px;
+    margin: 0 auto 2em auto;
+}
+.form-row {
+    display: flex;
+    gap: 1em;
+}
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+.modern-form label {
+    font-weight: 700;
+    margin-bottom: 0.3em;
+    color: #2C5282;
+}
+.modern-form input, .modern-form textarea {
+    border: 1px solid #C3DAFE;
+    border-radius: 5px;
+    padding: 0.7em;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    background: #F7FAFC;
+    resize: none;
+}
+.modern-form input:focus, .modern-form textarea:focus {
+    outline: none;
+    border-color: #3182CE;
+    background: #fff;
+}
+.modern-form button {
+    margin-top: 0.5em;
+    width: 100%;
+}
+.form-success {
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Анимации появления секций */
+.demo-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1);
+}
+.demo-section.visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Улучшенный футер */
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-bottom: 1em;
+}
+.footer__info h3 {
+    margin: 0 0 0.5em 0;
+    color: #BEE3F8;
+    font-size: 1.2em;
+}
+.footer__info p {
+    margin: 0;
+    color: #E2E8F0;
+}
+.footer__nav a {
+    display: block;
+    color: #BEE3F8;
+    margin-bottom: 0.5em;
+    text-decoration: none;
+    font-size: 1em;
+}
+.footer__nav a:hover {
+    text-decoration: underline;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .services__grid,
@@ -134,5 +228,12 @@ h2 { font-size: 1.8rem; text-align: center; margin-bottom: 1.5em; }
     .hero__image,
     .contact__image {
         height: 300px;
+    }
+    .form-row {
+        flex-direction: column;
+    }
+    .footer__content {
+        flex-direction: column;
+        gap: 1em;
     }
 }

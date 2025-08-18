@@ -44,6 +44,12 @@ h1, h2, h3 {
     top: 0;
     z-index: 1000;
     padding: 1rem 0;
+    transition: var(--transition);
+}
+
+.store-header.header--scrolled {
+    padding: 0.5rem 0;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.08);
 }
 
 .header__content {

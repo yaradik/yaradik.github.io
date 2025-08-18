@@ -149,6 +149,38 @@ contactForm.addEventListener('submit', (e) => {
     contactForm.reset();
 });
 
+// Вкладки меню
+const tabs = document.querySelectorAll('.menu-tab');
+const tabContents = document.querySelectorAll('.tab-content');
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        // Активная вкладка
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        // Активный контент
+        tabContents.forEach(tc => tc.classList.remove('active'));
+        document.querySelector('.tab-content-' + tab.dataset.tab).classList.add('active');
+    });
+});
+
+// Карусель стрелки
+const arrows = document.querySelectorAll('.carousel-arrow');
+arrows.forEach(arrow => {
+    arrow.addEventListener('click', () => {
+        const target = arrow.dataset.target;
+        const carousel = document.querySelector('.menu-items[data-carousel="' + target + '"]');
+        if (!carousel) return;
+        const card = carousel.querySelector('.creative-menu-item');
+        const cardWidth = card ? card.offsetWidth + 16 : 320; // 16px — gap
+        if (arrow.classList.contains('left')) {
+            carousel.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+        } else {
+            carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
+        }
+    });
+});
+
 // Add styles for new elements
 const style = document.createElement('style');
 style.textContent = `

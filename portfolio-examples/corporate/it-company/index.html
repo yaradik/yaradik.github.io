@@ -13,6 +13,7 @@
 <body>
     <header class="demo-header it-header">
         <div class="container">
+            <div class="header__content">
             <h1>TechSolutions</h1>
             <nav class="demo-nav">
                 <a href="#services">Услуги</a>
@@ -20,17 +21,77 @@
                 <a href="#team">Команда</a>
                 <a href="#contact">Контакты</a>
             </nav>
+            </div>
         </div>
     </header>
 
     <section class="hero-it demo-section">
         <div class="container">
+            <div class="hero__content">
+                <div class="hero__text">
             <h2>Инновационные IT-решения для вашего бизнеса</h2>
             <p>Разрабатываем современное программное обеспечение, создаем эффективные веб-решения и помогаем бизнесу расти с помощью технологий.</p>
+                    <div class="hero__features">
+                        <div class="hero__feature">
+                            <i class="fas fa-rocket"></i>
+                            <span>Быстрая разработка</span>
+                        </div>
+                        <div class="hero__feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Безопасность</span>
+                        </div>
+                        <div class="hero__feature">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Адаптивность</span>
+                        </div>
+                    </div>
+                    <div class="hero__actions">
+                        <a href="#contact" class="btn-it btn-it--primary">Обсудить проект</a>
+                        <a href="#projects" class="btn-it btn-it--secondary">Посмотреть работы</a>
+                    </div>
+                </div>
+                <div class="hero__visual">
             <div class="hero__image">
                 <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&auto=format&fit=crop&q=80" alt="IT-компания">
+                    </div>
+                    <div class="tech-icons">
+                        <div class="tech-icon" data-tech="react">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5 2.91667C17.5 2.91667 21.875 8.75 21.875 17.5C21.875 26.25 17.5 32.0833 17.5 32.0833C17.5 32.0833 13.125 26.25 13.125 17.5C13.125 8.75 17.5 2.91667 17.5 2.91667Z" fill="#61DAFB"/>
+                                <path d="M17.5 32.0833C17.5 32.0833 13.125 26.25 13.125 17.5C13.125 8.75 17.5 2.91667 17.5 2.91667" stroke="#61DAFB" stroke-width="2"/>
+                                <path d="M17.5 32.0833C17.5 32.0833 21.875 26.25 21.875 17.5C21.875 8.75 17.5 2.91667 17.5 2.91667" stroke="#61DAFB" stroke-width="2"/>
+                                <circle cx="17.5" cy="17.5" r="3.5" fill="#61DAFB"/>
+                            </svg>
+                        </div>
+                        <div class="tech-icon" data-tech="node">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5 2.91667L28.75 8.75V26.25L17.5 32.0833L6.25 26.25V8.75L17.5 2.91667Z" fill="#339933"/>
+                                <path d="M17.5 32.0833L28.75 26.25V8.75L17.5 2.91667L6.25 8.75V26.25L17.5 32.0833Z" stroke="#339933" stroke-width="2"/>
+                                <text x="17.5" y="20" text-anchor="middle" fill="white" font-size="8" font-weight="bold">JS</text>
+                            </svg>
+                        </div>
+                        <div class="tech-icon" data-tech="python">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="17.5" cy="17.5" r="15" fill="#3776AB"/>
+                                <path d="M17.5 7.5C17.5 7.5 22.5 7.5 22.5 12.5C22.5 17.5 17.5 17.5 17.5 17.5C17.5 17.5 12.5 17.5 12.5 12.5C12.5 7.5 17.5 7.5 17.5 7.5Z" fill="#FFD43B"/>
+                                <path d="M17.5 27.5C17.5 27.5 12.5 27.5 12.5 22.5C12.5 17.5 17.5 17.5 17.5 17.5C17.5 17.5 22.5 17.5 22.5 22.5C22.5 27.5 17.5 27.5 17.5 27.5Z" fill="#FFD43B"/>
+                            </svg>
+                        </div>
+                        <div class="tech-icon" data-tech="aws">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5 2.91667L28.75 8.75V26.25L17.5 32.0833L6.25 26.25V8.75L17.5 2.91667Z" fill="#FF9900"/>
+                                <path d="M17.5 32.0833L28.75 26.25V8.75L17.5 2.91667L6.25 8.75V26.25L17.5 32.0833Z" stroke="#FF9900" stroke-width="2"/>
+                                <text x="17.5" y="20" text-anchor="middle" fill="white" font-size="6" font-weight="bold">AWS</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a href="#contact" class="btn-it">Обсудить проект</a>
+        </div>
+        <div class="hero__background">
+            <div class="hero__bg-shape hero__bg-shape--1"></div>
+            <div class="hero__bg-shape hero__bg-shape--2"></div>
+            <div class="hero__bg-shape hero__bg-shape--3"></div>
         </div>
     </section>
 
@@ -225,7 +286,13 @@
                         <p>"Команда TechSolutions помогла нам создать современный интернет-магазин, который значительно увеличил наши продажи. Профессиональный подход и внимание к деталям."</p>
                     </div>
                     <div class="testimonial-author">
-                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&auto=format&fit=crop&q=80" alt="Иван Смирнов">
+                        <svg class="testimonial-avatar" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="35" cy="35" r="35" fill="#E2E8F0"/>
+                            <ellipse cx="35" cy="32" rx="13" ry="13" fill="#B3D4FC"/>
+                            <ellipse cx="35" cy="52" rx="18" ry="10" fill="#B3D4FC"/>
+                            <ellipse cx="35" cy="32" rx="8" ry="8" fill="#fff"/>
+                            <ellipse cx="35" cy="32" rx="5" ry="5" fill="#B3D4FC"/>
+                        </svg>
                         <div>
                             <h4>Иван Смирнов</h4>
                             <p>CEO, FashionStore</p>
@@ -237,7 +304,13 @@
                         <p>"Благодаря разработке мобильного приложения от TechSolutions мы смогли оптимизировать работу наших курьеров и улучшить качество обслуживания клиентов."</p>
                     </div>
                     <div class="testimonial-author">
-                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&auto=format&fit=crop&q=80" alt="Анна Петрова">
+                        <svg class="testimonial-avatar" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="35" cy="35" r="35" fill="#E2E8F0"/>
+                            <ellipse cx="35" cy="32" rx="13" ry="13" fill="#F9D7E2"/>
+                            <ellipse cx="35" cy="52" rx="18" ry="10" fill="#F9D7E2"/>
+                            <ellipse cx="35" cy="32" rx="8" ry="8" fill="#fff"/>
+                            <ellipse cx="35" cy="32" rx="5" ry="5" fill="#F9D7E2"/>
+                        </svg>
                         <div>
                             <h4>Анна Петрова</h4>
                             <p>CTO, DeliveryPro</p>

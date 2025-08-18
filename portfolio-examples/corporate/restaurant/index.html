@@ -22,75 +22,214 @@
         </div>
     </header>
 
-    <section class="hero-restaurant demo-section">
+    <section class="hero-restaurant">
         <div class="container">
+            <div class="hero-content">
             <h2>Насладитесь настоящей итальянской кухней</h2>
             <p>Аутентичные блюда, приготовленные по традиционным рецептам, и уютная атмосфера для незабываемого вечера.</p>
-            <div class="hero__image">
-                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&auto=format&fit=crop&q=80" alt="Ресторан итальянской кухни">
+                <a href="#contact" class="btn-restaurant">
+                    <i class="fas fa-utensils"></i>
+                    Забронировать столик
+                </a>
             </div>
-            <a href="#contact" class="btn-restaurant">Забронировать столик</a>
         </div>
     </section>
 
     <section id="menu" class="demo-section">
         <div class="container">
             <h2>Наше меню</h2>
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-tab="starters">Закуски</button>
+                <button class="menu-tab" data-tab="pasta">Паста</button>
+                <button class="menu-tab" data-tab="pizza">Пицца</button>
+            </div>
             <div class="menu__grid">
+                <div class="tab-content tab-content-starters active">
+                    <div class="carousel-arrows">
+                        <button class="carousel-arrow left" data-target="starters">&#8592;</button>
+                        <button class="carousel-arrow right" data-target="starters">&#8594;</button>
+                    </div>
                 <div class="menu-category">
                     <h3>Закуски</h3>
-                    <div class="menu-items">
-                        <div class="menu-item">
-                            <div class="menu-item__header">
-                                <h4>Брускетта</h4>
-                                <span class="price">350 ₽</span>
+                        <div class="menu-items" data-carousel="starters">
+                            <div class="menu-item creative-menu-item">
+                                <div class="menu-img-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&auto=format&fit=crop&q=80" alt="Капрезе">
+                                    <span class="menu-decor menu-decor-basil"></span>
+                                </div>
+                                <div class="menu-item__content">
+                                    <div class="menu-item__header">
+                                        <h4>Капрезе <span class="menu-title-underline"></span></h4>
+                                        <span class="price-badge">350 ₽</span>
+                                    </div>
+                                    <p>Свежие томаты с моцареллой и базиликом</p>
+                                </div>
                             </div>
-                            <p>Традиционная итальянская закуска с томатами и базиликом</p>
+                            <div class="menu-item creative-menu-item">
+                                <div class="menu-img-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1558030006-450675393462?w=400&auto=format&fit=crop&q=80" alt="Карпаччо">
+                                    <span class="menu-decor menu-decor-basil"></span>
+                                </div>
+                                <div class="menu-item__content">
+                                    <div class="menu-item__header">
+                                        <h4>Карпаччо <span class="menu-title-underline"></span></h4>
+                                        <span class="price-badge">450 ₽</span>
+                                    </div>
+                                    <p>Тонко нарезанная говядина с рукколой и пармезаном</p>
+                                </div>
+                            </div>
+                            <div class="menu-item creative-menu-item">
+                                <div class="menu-img-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&auto=format&fit=crop&q=80" alt="Оливки ассорти">
+                                    <span class="menu-decor menu-decor-basil"></span>
+                                </div>
+                                <div class="menu-item__content">
+                            <div class="menu-item__header">
+                                        <h4>Оливки ассорти <span class="menu-title-underline"></span></h4>
+                                        <span class="price-badge">250 ₽</span>
+                                    </div>
+                                    <p>Зеленые и черные оливки с пряностями</p>
+                                </div>
+                            </div>
+                            <div class="menu-item creative-menu-item">
+                                <div class="menu-img-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&auto=format&fit=crop&q=80" alt="Фокачча с розмарином">
+                                    <span class="menu-decor menu-decor-basil"></span>
                         </div>
-                        <div class="menu-item">
+                                <div class="menu-item__content">
                             <div class="menu-item__header">
-                                <h4>Карпаччо</h4>
-                                <span class="price">450 ₽</span>
+                                        <h4>Фокачча с розмарином <span class="menu-title-underline"></span></h4>
+                                        <span class="price-badge">200 ₽</span>
+                                    </div>
+                                    <p>Итальянская лепешка с оливковым маслом и розмарином</p>
+                                </div>
                             </div>
-                            <p>Тонко нарезанная говядина с рукколой и пармезаном</p>
                         </div>
                     </div>
+                </div>
+                <div class="tab-content tab-content-pasta">
+                    <div class="carousel-arrows">
+                        <button class="carousel-arrow left" data-target="pasta">&#8592;</button>
+                        <button class="carousel-arrow right" data-target="pasta">&#8594;</button>
                 </div>
                 <div class="menu-category">
                     <h3>Паста</h3>
-                    <div class="menu-items">
-                        <div class="menu-item">
-                            <div class="menu-item__header">
-                                <h4>Карбонара</h4>
-                                <span class="price">550 ₽</span>
+                        <div class="menu-items" data-carousel="pasta">
+                            <div class="menu-item creative-menu-item">
+                                <div class="menu-img-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&auto=format&fit=crop&q=80" alt="Спагетти с томатным соусом">
+                                    <span class="menu-decor menu-decor-basil"></span>
+                                </div>
+                                <div class="menu-item__content">
+                                    <div class="menu-item__header">
+                                        <h4>Спагетти с томатным соусом <span class="menu-title-underline"></span></h4>
+                                        <span class="price-badge">550 ₽</span>
+                                    </div>
+                                    <p>Классические спагетти с домашним томатным соусом</p>
+                                </div>
                             </div>
-                            <p>Спагетти с беконом, сливочным соусом и пармезаном</p>
+                            <div class="menu-item creative-menu-item">
+                                <div class="menu-img-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1556761223-4c4282c73f77?w=400&auto=format&fit=crop&q=80" alt="Болоньезе">
+                                    <span class="menu-decor menu-decor-basil"></span>
+                                </div>
+                                <div class="menu-item__content">
+                                    <div class="menu-item__header">
+                                        <h4>Болоньезе <span class="menu-title-underline"></span></h4>
+                                        <span class="price-badge">580 ₽</span>
+                                    </div>
+                                    <p>Спагетти с мясным соусом и томатами</p>
+                                </div>
+                            </div>
+                            <div class="menu-item creative-menu-item">
+                                <div class="menu-img-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&auto=format&fit=crop&q=80" alt="Лазанья болоньезе">
+                                    <span class="menu-decor menu-decor-basil"></span>
+                                </div>
+                                <div class="menu-item__content">
+                            <div class="menu-item__header">
+                                        <h4>Лазанья болоньезе <span class="menu-title-underline"></span></h4>
+                                        <span class="price-badge">620 ₽</span>
+                                    </div>
+                                    <p>Слоёная паста с мясным соусом и сыром</p>
+                                </div>
+                            </div>
+                            <div class="menu-item creative-menu-item">
+                                <div class="menu-img-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?w=400&auto=format&fit=crop&q=80" alt="Пене арабьята">
+                                    <span class="menu-decor menu-decor-basil"></span>
                         </div>
-                        <div class="menu-item">
+                                <div class="menu-item__content">
                             <div class="menu-item__header">
-                                <h4>Болоньезе</h4>
-                                <span class="price">580 ₽</span>
+                                        <h4>Пене арабьята <span class="menu-title-underline"></span></h4>
+                                        <span class="price-badge">540 ₽</span>
+                                    </div>
+                                    <p>Пикантная паста с томатным соусом и перцем чили</p>
+                                </div>
                             </div>
-                            <p>Спагетти с мясным соусом и томатами</p>
                         </div>
                     </div>
                 </div>
+                <div class="tab-content tab-content-pizza">
+                    <div class="carousel-arrows">
+                        <button class="carousel-arrow left" data-target="pizza">&#8592;</button>
+                        <button class="carousel-arrow right" data-target="pizza">&#8594;</button>
+                </div>
                 <div class="menu-category">
                     <h3>Пицца</h3>
-                    <div class="menu-items">
-                        <div class="menu-item">
-                            <div class="menu-item__header">
-                                <h4>Маргарита</h4>
-                                <span class="price">650 ₽</span>
+                        <div class="menu-items" data-carousel="pizza">
+                            <div class="menu-item creative-menu-item">
+                                <div class="menu-img-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&auto=format&fit=crop&q=80" alt="Пицца с грибами">
+                                    <span class="menu-decor menu-decor-basil"></span>
+                                </div>
+                                <div class="menu-item__content">
+                                    <div class="menu-item__header">
+                                        <h4>Пицца с грибами <span class="menu-title-underline"></span></h4>
+                                        <span class="price-badge">650 ₽</span>
+                                    </div>
+                                    <p>Пицца с шампиньонами и моцареллой</p>
+                                </div>
                             </div>
-                            <p>Классическая пицца с томатами и моцареллой</p>
+                            <div class="menu-item creative-menu-item">
+                                <div class="menu-img-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&auto=format&fit=crop&q=80" alt="Пепперони">
+                                    <span class="menu-decor menu-decor-basil"></span>
+                                </div>
+                                <div class="menu-item__content">
+                                    <div class="menu-item__header">
+                                        <h4>Пепперони <span class="menu-title-underline"></span></h4>
+                                        <span class="price-badge">750 ₽</span>
+                                    </div>
+                                    <p>Пицца с пепперони и моцареллой</p>
+                                </div>
+                            </div>
+                            <div class="menu-item creative-menu-item">
+                                <div class="menu-img-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?w=400&auto=format&fit=crop&q=80" alt="Четыре сыра">
+                                    <span class="menu-decor menu-decor-basil"></span>
+                                </div>
+                                <div class="menu-item__content">
+                            <div class="menu-item__header">
+                                        <h4>Четыре сыра <span class="menu-title-underline"></span></h4>
+                                        <span class="price-badge">790 ₽</span>
+                                    </div>
+                                    <p>Пицца с моцареллой, горгонзолой, пармезаном и эмменталем</p>
+                                </div>
+                            </div>
+                            <div class="menu-item creative-menu-item">
+                                <div class="menu-img-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&auto=format&fit=crop&q=80" alt="Вегетариана">
+                                    <span class="menu-decor menu-decor-basil"></span>
                         </div>
-                        <div class="menu-item">
+                                <div class="menu-item__content">
                             <div class="menu-item__header">
-                                <h4>Пепперони</h4>
-                                <span class="price">750 ₽</span>
+                                        <h4>Вегетариана <span class="menu-title-underline"></span></h4>
+                                        <span class="price-badge">670 ₽</span>
+                                    </div>
+                                    <p>Пицца с овощами, томатами и моцареллой</p>
+                                </div>
                             </div>
-                            <p>Пицца с пепперони и моцареллой</p>
                         </div>
                     </div>
                 </div>
@@ -121,13 +260,13 @@
                     <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop&q=80" alt="Интерьер ресторана">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop&q=80" alt="Блюда">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&fit=crop&q=80" alt="Блюда">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop&q=80" alt="Шеф-повар">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&auto=format&fit=crop&q=80" alt="Шеф-повар">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop&q=80" alt="Бар">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&auto=format&fit=crop&q=80" alt="Бар">
                 </div>
             </div>
         </div>
@@ -138,28 +277,33 @@
             <h2>Связаться с нами</h2>
             <p>Забронируйте столик или закажите доставку прямо сейчас.</p>
             <div class="contact__form">
-                <form>
+                <form class="modern-form">
+                    <div class="form-row">
                     <div class="form-group">
-                        <input type="text" placeholder="Ваше имя" required>
+                            <label for="name">Имя</label>
+                            <input type="text" id="name" placeholder="Ваше имя" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Ваш email" required>
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" required>
+                    </div>
                     </div>
                     <div class="form-group">
-                        <input type="tel" placeholder="Ваш телефон" required>
-                    </div>
-                    <div class="form-group">
-                        <select required>
+                        <label for="service">Услуга</label>
+                        <select id="service" required>
                             <option value="">Выберите услугу</option>
-                            <option value="reservation">Бронирование столика</option>
-                            <option value="delivery">Доставка</option>
-                            <option value="catering">Кейтеринг</option>
+                            <option value="reservation">🍽️ Бронирование столика</option>
+                            <option value="delivery">🚚 Доставка</option>
+                            <option value="catering">🎉 Кейтеринг</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Дополнительная информация" rows="4" required></textarea>
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" placeholder="Расскажите о ваших пожеланиях..." rows="3"></textarea>
                     </div>
-                    <button type="submit" class="btn-restaurant">Отправить заявку</button>
+                    <button type="submit" class="btn-restaurant">
+                        <span>📞 Отправить заявку</span>
+                    </button>
                 </form>
             </div>
         </div>
@@ -185,5 +329,6 @@
             <p><a href="../../index.html">Вернуться на главный сайт YaRadik</a></p>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html> 

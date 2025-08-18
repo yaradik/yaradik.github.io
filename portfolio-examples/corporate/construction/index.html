@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="../../assets/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header class="demo-header construction-header">
         <div class="container">
             <h1>BuildMaster</h1>
             <nav class="demo-nav">
-                <a href="#services">Услуги</a>
-                <a href="#projects">Проекты</a>
-                <a href="#materials">Материалы</a>
-                <a href="#contact">Контакты</a>
+                <a href="#services"><i class="fas fa-tools"></i> Услуги</a>
+                <a href="#projects"><i class="fas fa-project-diagram"></i> Проекты</a>
+                <a href="#materials"><i class="fas fa-box"></i> Материалы</a>
+                <a href="#contact"><i class="fas fa-address-book"></i> Контакты</a>
             </nav>
         </div>
     </header>
@@ -26,10 +27,7 @@
         <div class="container">
             <h2>Строим будущее вместе</h2>
             <p>Профессиональное строительство и ремонт с гарантией качества. Более 10 лет опыта в строительстве жилых и коммерческих объектов.</p>
-            <div class="hero__image">
-                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&auto=format&fit=crop&q=80" alt="Строительная компания">
-            </div>
-            <a href="#contact" class="btn-construction">Получить консультацию</a>
+            <a href="#contact" class="btn-construction"><i class="fas fa-phone-alt"></i> Получить консультацию</a>
         </div>
     </section>
 
@@ -48,7 +46,7 @@
                     <p>Капитальный и косметический ремонт квартир, офисов и коммерческих помещений</p>
                 </div>
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&auto=format&fit=crop&q=80" alt="Дизайн-проекты">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop&q=80" alt="Дизайн-проекты">
                     <h3>Дизайн-проекты</h3>
                     <p>Разработка дизайн-проектов интерьеров с учетом всех пожеланий клиента</p>
                 </div>
@@ -88,30 +86,39 @@
         </div>
     </section>
 
-    <section id="materials" class="demo-section">
+    <section id="materials" class="materials">
         <div class="container">
             <h2>Используемые материалы</h2>
-            <div class="materials__grid">
-                <div class="material-card">
+            <div class="materials-grid">
+                <div class="material-card brick">
                     <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&auto=format&fit=crop&q=80" alt="Кирпич">
-                    <div class="material-card__content">
                         <h3>Кирпич</h3>
-                        <p>Высококачественный кирпич от ведущих производителей</p>
-                    </div>
+                    <p>Высококачественный кирпич от ведущих производителей для надежного строительства</p>
+                    <ul class="material-features">
+                        <li>Морозостойкость F50</li>
+                        <li>Прочность М150</li>
+                        <li>Экологичность</li>
+                    </ul>
                 </div>
-                <div class="material-card">
-                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&auto=format&fit=crop&q=80" alt="Бетон">
-                    <div class="material-card__content">
+                <div class="material-card concrete">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop&q=80" alt="Бетон">
                         <h3>Бетон</h3>
-                        <p>Прочный бетон с гарантированным качеством</p>
-                    </div>
+                    <p>Прочный бетон с гарантированным качеством для монолитного строительства</p>
+                    <ul class="material-features">
+                        <li>Класс прочности В25</li>
+                        <li>Морозостойкость F200</li>
+                        <li>Водонепроницаемость W8</li>
+                    </ul>
                 </div>
-                <div class="material-card">
-                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&auto=format&fit=crop&q=80" alt="Отделочные материалы">
-                    <div class="material-card__content">
+                <div class="material-card finishing">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&auto=format&fit=crop&q=80" alt="Отделочные материалы">
                         <h3>Отделочные материалы</h3>
-                        <p>Экологичные и долговечные материалы для отделки</p>
-                    </div>
+                    <p>Экологичные и долговечные материалы для качественной отделки</p>
+                    <ul class="material-features">
+                        <li>Сертифицированные материалы</li>
+                        <li>Широкая цветовая палитра</li>
+                        <li>Легкость в уходе</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -143,7 +150,7 @@
                     <div class="form-group">
                         <textarea placeholder="Опишите ваш проект" rows="4" required></textarea>
                     </div>
-                    <button type="submit" class="btn-construction">Отправить заявку</button>
+                    <button type="submit" class="btn-construction"><i class="fas fa-paper-plane"></i> Отправить заявку</button>
                 </form>
             </div>
         </div>
@@ -159,10 +166,10 @@
                     <p>Адрес: г. Москва, ул. Строительная, 1</p>
                 </div>
                 <div class="footer__nav">
-                    <a href="#services">Услуги</a>
-                    <a href="#projects">Проекты</a>
-                    <a href="#materials">Материалы</a>
-                    <a href="#contact">Контакты</a>
+                    <a href="#services"><i class="fas fa-tools"></i> Услуги</a>
+                    <a href="#projects"><i class="fas fa-project-diagram"></i> Проекты</a>
+                    <a href="#materials"><i class="fas fa-box"></i> Материалы</a>
+                    <a href="#contact"><i class="fas fa-address-book"></i> Контакты</a>
                 </div>
             </div>
             <p class="footer__copyright">&copy; 2024 BuildMaster. Все права защищены.</p>

@@ -3,60 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Строительная Компания "СтройДом" - Landing Page</title>
+    <title>Строительная компания «СтройДом» — Современный лендинг</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
     <link rel="icon" href="../../assets/logo.svg" type="image/svg+xml">
 </head>
 <body>
-    <header class="demo-header construction-header">
-        <div class="container">
-            <h1>СтройДом - Строим будущее сегодня</h1>
-            <nav class="demo-nav">
-                <a href="#projects">Проекты</a>
-                <a href="#services_constr">Услуги</a>
-                <a href="#contact_constr">Контакты</a>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <img src="https://images.pexels.com/photos/209251/pexels-photo-209251.jpeg?auto=compress&w=60&h=60&fit=crop" alt="Логотип" />
+                <span>СтройДом</span>
+            </div>
+            <nav class="nav">
+                <a href="#services">Услуги</a>
+                <a href="#portfolio">Портфолио</a>
+                <a href="#advantages">Преимущества</a>
+                <a href="#contact">Заявка</a>
             </nav>
         </div>
     </header>
 
-    <section class="hero-construction demo-section">
-        <div class="container">
-            <h2>Качественное строительство домов и коттеджей</h2>
-            <p>От фундамента до крыши - полный цикл строительных работ.</p>
-            <div class="demo-placeholder-image" style="height: 350px; background-color: #FEFCBF; border: 1px solid #F7E3A3;">
-                Placeholder: Впечатляющее фото построенного дома или строительного процесса
+    <section class="hero">
+        <div class="container hero__container">
+            <div class="hero__content">
+                <h1>Строим будущее<br>— уже сегодня</h1>
+                <p>Современные дома, коттеджи и коммерческие объекты под ключ. Гарантия качества и сроков.</p>
+                <a href="#contact" class="btn btn--primary">Рассчитать стоимость</a>
             </div>
-            <a href="#contact_constr" class="btn-construction">Рассчитать стоимость</a>
+            <div class="hero__image">
+                <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&w=600&fit=crop" alt="Современное строительство" />
+            </div>
         </div>
     </section>
 
-    <section id="projects" class="demo-section">
+    <section id="services" class="services">
         <div class="container">
-            <h2>Наши реализованные проекты</h2>
-            <div class="demo-placeholder-image" style="min-height:200px;">Placeholder: Галерея проектов (картинки + краткие описания)</div>
+            <h2>Наши услуги</h2>
+            <div class="services__list">
+                <div class="card service-card">
+                    <div class="card__icon"><span>🏗️</span></div>
+                    <h3>Строительство под ключ</h3>
+                    <p>Полный цикл работ: от фундамента до отделки. Современные технологии и материалы.</p>
+                </div>
+                <div class="card service-card">
+                    <div class="card__icon"><span>📝</span></div>
+                    <h3>Проектирование</h3>
+                    <p>Индивидуальные проекты домов и коммерческих объектов. Архитектурное и инженерное сопровождение.</p>
+                </div>
+                <div class="card service-card">
+                    <div class="card__icon"><span>🔧</span></div>
+                    <h3>Ремонт и реконструкция</h3>
+                    <p>Капитальный и косметический ремонт, реконструкция зданий любой сложности.</p>
+                </div>
+                <div class="card service-card">
+                    <div class="card__icon"><span>💡</span></div>
+                    <h3>Инженерные сети</h3>
+                    <p>Монтаж и обслуживание электрики, водоснабжения, отопления и вентиляции.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="services_constr" class="demo-section" style="background-color: #F0F4F8;">
+    <section id="portfolio" class="portfolio">
         <div class="container">
-            <h2>Спектр наших услуг</h2>
-            <p>Проектирование, строительство, ремонт, отделочные работы.</p>
-            <div class="demo-placeholder-image" style="min-height:150px;">Placeholder: Иконки услуг</div>
+            <h2>Портфолио проектов</h2>
+            <div class="portfolio__gallery">
+                <div class="portfolio__item" data-img="https://images.pexels.com/photos/534164/pexels-photo-534164.jpeg?auto=compress&w=800&fit=crop">
+                    <img src="https://images.pexels.com/photos/534164/pexels-photo-534164.jpeg?auto=compress&w=400&fit=crop" alt="Загородный дом" />
+                    <div class="portfolio__desc">Загородный дом, 2023</div>
+                </div>
+                <div class="portfolio__item" data-img="https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&w=800&fit=crop">
+                    <img src="https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&w=400&fit=crop" alt="Офисный центр" />
+                    <div class="portfolio__desc">Офисный центр, 2022</div>
+                </div>
+                <div class="portfolio__item" data-img="https://images.pexels.com/photos/221540/pexels-photo-221540.jpeg?auto=compress&w=800&fit=crop">
+                    <img src="https://images.pexels.com/photos/221540/pexels-photo-221540.jpeg?auto=compress&w=400&fit=crop" alt="Коттедж" />
+                    <div class="portfolio__desc">Коттедж, 2021</div>
+                </div>
+                <div class="portfolio__item" data-img="https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&w=800&fit=crop">
+                    <img src="https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&w=400&fit=crop" alt="Торговый комплекс" />
+                    <div class="portfolio__desc">Торговый комплекс, 2020</div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal-gallery">
+            <div class="modal__overlay"></div>
+            <div class="modal__content">
+                <img src="" alt="" id="modal-img" />
+                <button class="modal__close" id="modal-close">×</button>
+            </div>
         </div>
     </section>
 
-    <section id="contact_constr" class="demo-section">
+    <section id="advantages" class="advantages">
         <div class="container">
-            <h2>Обсудим ваш проект?</h2>
-            <p>Оставьте заявку, и мы свяжемся с вами!</p>
-            <div class="demo-placeholder-image" style="min-height:150px;">Placeholder: Форма заявки</div>
+            <h2>Почему выбирают нас</h2>
+            <div class="advantages__list">
+                <div class="card adv-card">
+                    <div class="card__icon"><span>⏱️</span></div>
+                    <h3>Соблюдаем сроки</h3>
+                    <p>Гарантируем выполнение работ точно в срок — прописано в договоре.</p>
+                </div>
+                <div class="card adv-card">
+                    <div class="card__icon"><span>🛡️</span></div>
+                    <h3>Гарантия качества</h3>
+                    <p>Используем только проверенные материалы и технологии, даём гарантию на все работы.</p>
+                </div>
+                <div class="card adv-card">
+                    <div class="card__icon"><span>👷‍♂️</span></div>
+                    <h3>Опытная команда</h3>
+                    <p>В штате — только профессионалы с опытом от 5 лет.</p>
+                </div>
+                <div class="card adv-card">
+                    <div class="card__icon"><span>💬</span></div>
+                    <h3>Прозрачность</h3>
+                    <p>Открытая смета, фотоотчёты, постоянная связь с заказчиком.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer class="demo-footer construction-footer">
-        <p>&copy; 2024 Строительная Компания "СтройДом"</p>
-        <p><a href="../../index.html" style="color:#F7E3A3; text-decoration:underline;">Вернуться на главный сайт YaRadik</a></p>
+    <section id="contact" class="contact">
+        <div class="container contact__container">
+            <div class="contact__info">
+                <h2>Оставьте заявку</h2>
+                <p>Мы свяжемся с вами в течение рабочего дня и бесплатно проконсультируем по вашему проекту.</p>
+                <ul class="contact__list">
+                    <li><b>Телефон:</b> <a href="tel:+79991234567">+7 (999) 123-45-67</a></li>
+                    <li><b>Email:</b> <a href="mailto:info@stroydom.ru">info@stroydom.ru</a></li>
+                </ul>
+            </div>
+            <form class="contact__form" id="contact-form">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="tel" name="phone" placeholder="Телефон" required pattern="[0-9\-\+\s\(\)]{7,}">
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Опишите ваш проект" required></textarea>
+                <button type="submit" class="btn btn--primary">Отправить заявку</button>
+                <div class="form__success" id="form-success" style="display:none;">Спасибо! Мы свяжемся с вами.</div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__logo">
+                <img src="https://images.pexels.com/photos/209251/pexels-photo-209251.jpeg?auto=compress&w=40&h=40&fit=crop" alt="Логотип" />
+                <span>СтройДом</span>
+            </div>
+            <div class="footer__contacts">
+                <a href="tel:+79991234567">+7 (999) 123-45-67</a> |
+                <a href="mailto:info@stroydom.ru">info@stroydom.ru</a>
+            </div>
+            <div class="footer__copy">© 2024 Строительная компания «СтройДом»</div>
+        </div>
     </footer>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
